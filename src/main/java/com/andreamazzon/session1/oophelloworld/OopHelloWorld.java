@@ -11,7 +11,11 @@ package com.andreamazzon.session1.oophelloworld;
 public class OopHelloWorld {
 
 	public static void main(String[] args) {
-		Message myMessage = new Message(); // Object creation. Message() is a particular method called constructor. More about this later on
+
+		/* Object creation: NameOfClass nameOfObject = new NameOfClass(); Message() is a particular method
+		 * called constructor. More about this tomorrow
+		 */
+		Message myMessage = new Message();
 		Message myOtherMessage = new Message(); //these are fields of the class OopHelloWorld
 		myMessage.messageToBePrinted = "Here is my message";//see how a field of an object is manipulated
 		myOtherMessage.messageToBePrinted = "Other message";
