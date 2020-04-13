@@ -8,7 +8,7 @@ package com.andreamazzon.session2.bicycles;
  * @author Andrea Mazzon
  *
  */
-public class BycicleMain {
+public class BicycleMain {
 	public static void main(String[] striings){
 		Bicycle firstBycicle = new Bicycle (3, 2500, "red");
 		Bicycle secondBycicle = new Bicycle (5, 3000, "blue");
