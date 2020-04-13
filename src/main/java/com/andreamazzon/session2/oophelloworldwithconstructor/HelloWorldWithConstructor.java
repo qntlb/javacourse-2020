@@ -7,7 +7,6 @@ package com.andreamazzon.session2.oophelloworldwithconstructor;
  *
  * @author Andrea Mazzon
  */
-
 public class HelloWorldWithConstructor {
 
 	public static void main(String[] args) {

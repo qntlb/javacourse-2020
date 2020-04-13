@@ -2,12 +2,11 @@ package com.andreamazzon.session2.bicycles;
 
 /**
  * This class serves as an example of a possible use of static fields: here we want to know the total cost of
- * our bykes' production. Thus we need a number whose value "passes from an object to the other": a possible
+ * our bikes' production. Thus we need a number whose value "passes from an object to the other": a possible
  * solution is to have a field whose value is shared by all of this class, that means, allocated in the same
  * space of memory. This is what we get with a static field.
  *
  * @author Andrea Mazzon
- *
  */
 public class Bicycle {
 

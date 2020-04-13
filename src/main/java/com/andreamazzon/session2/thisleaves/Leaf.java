@@ -6,9 +6,7 @@ package com.andreamazzon.session2.thisleaves;
  * and to return a reference of the object calling the method.
  *
  * @author Andrea Mazzon
- *
  */
-
 public class Leaf {
 
 	int i;

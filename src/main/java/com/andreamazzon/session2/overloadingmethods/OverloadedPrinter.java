@@ -6,9 +6,7 @@ package com.andreamazzon.session2.overloadingmethods;
  * plus the string
  *
  * @author Andrea Mazzon
- *
  */
-
 public class OverloadedPrinter {
 	void print() {
 		System.out.println("This is a print method");

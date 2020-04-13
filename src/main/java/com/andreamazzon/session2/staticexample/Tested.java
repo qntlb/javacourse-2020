@@ -4,9 +4,7 @@ package com.andreamazzon.session2.staticexample;
  * It is shown that it is not possible to reference to non static methods and non static variables of the class from a static method.
  *
  * @author Andrea Mazzon
- *
  */
-
 public class Tested {
 	static int staticVariable = 8;
 	int nonStaticVariable=3;

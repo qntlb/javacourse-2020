@@ -6,7 +6,6 @@ package com.andreamazzon.session2.divisiblewithconstructor;
  * dividend and divisor is given and passed to he constructor of CheckDivisibleWithConstructor.
  *
  * @author Andrea Mazzon
- *
  */
 public class MainDivisibleConstructor {
 

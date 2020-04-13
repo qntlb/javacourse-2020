@@ -5,7 +5,6 @@ package com.andreamazzon.session2.treesconstructor;
  * with arguments (here a double).
  *
  * @author Andrea Mazzon
- *
  */
 public class TreeMain {
 

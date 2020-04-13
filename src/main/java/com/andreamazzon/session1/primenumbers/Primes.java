@@ -6,6 +6,7 @@ package com.andreamazzon.session1.primenumbers;
  * @author: Andrea Mazzon
  */
 public class Primes {
+
 	public static void main(String[] args) {
 		int n =  17;
 		PrimesCheck checker = new PrimesCheck();

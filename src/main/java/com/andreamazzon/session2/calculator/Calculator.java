@@ -5,7 +5,6 @@ package com.andreamazzon.session2.calculator;
  * of the class (the class actually has no fields).
  *
  * @author Andrea Mazzon
- *
  */
 public class Calculator {
 

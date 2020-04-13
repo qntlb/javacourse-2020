@@ -8,14 +8,10 @@ package com.andreamazzon.session2.staticexample;
  * all the objects
  *
  * @author Andrea Mazzon
- *
  */
-
 public class StaticTest {
 
-
 	public static void main(String[] args) {
-
 
 		Tested o1 = new Tested();
 		Tested o2 = new Tested();

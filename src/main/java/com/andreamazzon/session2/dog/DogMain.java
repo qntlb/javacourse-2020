@@ -5,7 +5,6 @@ package com.andreamazzon.session2.dog;
  *
  * @author Andrea Mazzon
  */
-
 public class DogMain {
 
 	public static void main(String[] args) {

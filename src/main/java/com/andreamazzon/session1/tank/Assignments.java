@@ -7,10 +7,9 @@ package com.andreamazzon.session1.tank;
  * this behavior.
  *
  * @author Andrea Mazzon
- *
  */
-
 public class Assignments {
+
 	public static void main(String[] args) {
 		//create the reference to new objects of type Tank
 		Tank tank1 = new Tank();

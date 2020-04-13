@@ -6,7 +6,6 @@ package com.andreamazzon.session2.overloadingmethods;
  *
  * @author Andrea Mazzon
  */
-
 public class Overloader {
 
 	public static void main(String[] args) {

@@ -7,7 +7,6 @@ package com.andreamazzon.session1.oophelloworld;
  *
  * @author Andrea Mazzon
  */
-
 public class OopHelloWorld {
 
 	public static void main(String[] args) {

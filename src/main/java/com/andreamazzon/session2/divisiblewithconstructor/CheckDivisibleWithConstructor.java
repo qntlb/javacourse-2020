@@ -6,9 +6,9 @@ package com.andreamazzon.session2.divisiblewithconstructor;
  * allowing for the argument name of the constructor to match the field name.
  *
  * @author Andrea Mazzon
- *
  */
 public class CheckDivisibleWithConstructor {
+
 	int dividend;
 	int divisor;
 

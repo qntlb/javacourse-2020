@@ -5,7 +5,6 @@ package com.andreamazzon.session2.power;
  * number and the exponent a double, the user will be warned that the result is a complex number.
  *
  * @author Andrea Mazzon
- *
  */
 public class PowerMain {
 

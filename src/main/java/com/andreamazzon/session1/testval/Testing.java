@@ -5,9 +5,7 @@ package com.andreamazzon.session1.testval;
  * We use the class comparison
  *
  * @author Andrea Mazzon
- *
  */
-
 public class Testing {
 
 	public static void main(String[] args) {

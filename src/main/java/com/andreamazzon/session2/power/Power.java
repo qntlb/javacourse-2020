@@ -8,9 +8,9 @@ package com.andreamazzon.session2.power;
  * exponent is int and the one when the exponent is double) by Overloading.
  *
  * @author Andrea Mazzon
- *
  */
 public class Power {
+
 	double result; //only definition, not initialization
 
 	/**

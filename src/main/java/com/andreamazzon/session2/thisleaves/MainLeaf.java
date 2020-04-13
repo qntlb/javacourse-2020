@@ -4,10 +4,9 @@ package com.andreamazzon.session2.thisleaves;
  * This class shows some example of the uses of this
  *
  * @author Andrea Mazzon
- *
  */
-
 public class MainLeaf {
+
 	public static void main(String[] args) {
 		Leaf x = new Leaf(0);
 		x.increment().increment().increment().print(); //iterated calls using this
@@ -15,4 +14,3 @@ public class MainLeaf {
 		daisy.printPetalCountAndString();
 	}
 }
-
