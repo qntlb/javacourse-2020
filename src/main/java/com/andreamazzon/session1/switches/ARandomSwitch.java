@@ -8,10 +8,9 @@ import java.util.Random;
  * i.e., an expression was result is an integer or a char
  *
  * @author Andrea Mazzon
- *
  */
-
 public class ARandomSwitch {
+
 	public static void main(String[] args) {
 		Random randomNumberGenerator = new Random(); //current time as a seed for the random number generator
 		int switchValue = randomNumberGenerator.nextInt(9);

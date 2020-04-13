@@ -7,7 +7,8 @@ package com.andreamazzon.session2.constructortemperature;
  * @author: Andrea Mazzon
  */
 public class Temperature {
-	double temperature=0;
+
+	double temperature = 0;
 
 	//overloaded constructor: it is used to specify the value of the temperature
 	Temperature(double t) {

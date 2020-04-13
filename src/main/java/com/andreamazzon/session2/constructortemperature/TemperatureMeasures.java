@@ -5,9 +5,9 @@ package com.andreamazzon.session2.constructortemperature;
  * first with the overloaded constructor, then with default constructor.
  *
  * @author Andrea Mazzon
- *
  */
 public class TemperatureMeasures {
+
 	static public void main(String[] args) {
 		Temperature t1 = new Temperature(27.1);//overloaded constructor: we specify the value of the temperature
 		Temperature t2 = new Temperature(18.5);
@@ -18,4 +18,3 @@ public class TemperatureMeasures {
 	}
 
 }
-

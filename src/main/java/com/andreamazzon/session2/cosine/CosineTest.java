@@ -4,9 +4,7 @@ package com.andreamazzon.session2.cosine;
  * This class illustrates methods overloading by the computation of the cosine of a given number.
  *
  * @author Andrea Mazzon
- *
  */
-
 public class CosineTest {
 
 	public static void main(String[] args) {

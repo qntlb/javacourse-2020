@@ -5,10 +5,9 @@ package com.andreamazzon.session2.thisleaves;
  * constructor inside a constructor. We have four constructors, with different arguments lists.
  *
  * @author Andrea Mazzon
- *
  */
-
 public class Flower {
+
 	int petalCount = 0;
 	String s = "some text";
 

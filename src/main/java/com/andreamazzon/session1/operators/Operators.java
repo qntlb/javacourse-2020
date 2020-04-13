@@ -4,7 +4,6 @@ package com.andreamazzon.session1.operators;
  * Examples of operators: an operator takes one or more arguments and produces a new value
  *
  * @author Andrea Mazzon
- *
  */
 public class Operators {
 

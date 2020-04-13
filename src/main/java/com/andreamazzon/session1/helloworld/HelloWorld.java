@@ -5,7 +5,6 @@ package com.andreamazzon.session1.helloworld;//first line: package your file bel
  * This class prints the classic hello world message
  *
  * @author Andrea Mazzon
- *
  */
 
 //note how a class is created: class keyword followed by the name. More about "public" in some time

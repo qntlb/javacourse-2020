@@ -4,7 +4,6 @@ package com.andreamazzon.session1.divisible;
  * This class checks if a number is divisible by another number: this is a very simple example of if/else statement
  *
  * @author Andrea Mazzon
- *
  */
 public class Divisible {
 

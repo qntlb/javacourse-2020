@@ -5,7 +5,6 @@ package com.andreamazzon.session2.dog;
  * but whose implementation is different depending on the type of the argument.
  *
  * @author Andrea Mazzon
- *
  */
 public class Dog {
 

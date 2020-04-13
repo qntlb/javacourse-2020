@@ -5,9 +5,9 @@ package com.andreamazzon.session2.treesconstructor;
  * three is specified by the double argument of the constructor
  *
  * @author Andrea Mazzon
- *
  */
 public class Tree {
+
 	//constructor with a double argument
 	Tree(double height){
 		System.out.println("A new tree " + height + " meters high")	;

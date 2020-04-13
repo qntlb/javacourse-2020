@@ -7,11 +7,12 @@ package com.andreamazzon.session2.cosine;
  * ratio between the given number and Pi.
  *
  * @author Andrea Mazzon
- *
  */
 public class CosineOverload {
+
 	/**
 	 * Computes the cosine of a given number
+	 *
 	 * @param double x
 	 * @return cos(x)
 	 */
@@ -23,6 +24,7 @@ public class CosineOverload {
 			return calculateCosine(n);//the overloaded method is called!
 		}
 	}
+
 	/**
 	 * Computes cos(x), when x=n*Pi
 	 * @param int n = x/Pi
@@ -38,4 +40,3 @@ public class CosineOverload {
 	}
 
 }
-

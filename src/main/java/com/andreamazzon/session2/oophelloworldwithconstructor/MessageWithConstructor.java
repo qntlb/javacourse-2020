@@ -15,6 +15,7 @@ public class MessageWithConstructor {
 		//side effect: a message is printed
 		System.out.println("A new object is created, and a new message is going to be printed");
 	}
+
 	/*
 	 * look at the definition of the method: void (it returns no object),name of the method (first letter not capitalised,
 	 * Java convention), argument list (in this case no argument)

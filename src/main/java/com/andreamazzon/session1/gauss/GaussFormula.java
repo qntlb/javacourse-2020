@@ -5,7 +5,6 @@ package com.andreamazzon.session1.gauss;
  * is equal to the Gauss Formula.
  *
  * @author Andrea Mazzon
- *
  */
 public class GaussFormula {
 
