@@ -8,9 +8,12 @@ package com.andreamazzon.session1.divisible;
 public class Divisible {
 
 	public static void main(String[] args) {
+
 		int dividend = 12;
 		int divisor = 4;
+
 		boolean statement = (dividend % divisor == 0);//the parenthesis are not necessary, but in this way is more readable
+
 		//note:
 		if (statement) {
 			//or directly:
