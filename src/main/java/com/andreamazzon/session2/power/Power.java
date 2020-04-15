@@ -32,7 +32,7 @@ public class Power {
 	 */
 	void computePower (double base, double exponent) {
 		//we distinguish the two cases
-		if (base >=0) {
+		if (base >=0 || exponent == Math.floor(exponent)) {
 			result = Math.pow(base, exponent);
 			System.out.println("Computing " + base + " to the power of " + exponent + ". The result is " + result);
 		}
