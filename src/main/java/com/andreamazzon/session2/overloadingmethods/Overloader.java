@@ -12,8 +12,9 @@ public class Overloader {
 
 		OverloadedPrinter printer = new OverloadedPrinter();//just the default constructor
 
+		printer.messageToBePrinted = "servus!";
 		printer.print();//no arguments: a default message will be printed
-		printer.print("hello!"); //this string is added to the message
+		printer.print("gruss dich!"); //this string is added to the message
 
 	}
 }
