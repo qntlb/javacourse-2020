@@ -8,9 +8,9 @@ package com.andreamazzon.session1.oophelloworld;
  */
 public class Message {
 	//special Java feature: String can be initialized with quoted text. It can anyway be manipulated from other classes
-	String messageToBePrinted = "a message";
+	//String messageToBePrinted = "a message";
 	//or also:
-	//String messageToBePrinted = new String("a message");
+	String messageToBePrinted = new String("Good morning");
 
 	/*
 	 * look at the definition of the method: void (it returns no object),name of the method (first letter not capitalised,

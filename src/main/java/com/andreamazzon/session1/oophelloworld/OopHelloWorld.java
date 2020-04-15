@@ -16,13 +16,14 @@ public class OopHelloWorld {
 		 */
 		Message myMessage = new Message();
 		Message myOtherMessage = new Message(); //these are fields of the class OopHelloWorld
-		myMessage.messageToBePrinted = "Here is my message";//see how a field of an object is manipulated
-		myOtherMessage.messageToBePrinted = "Other message";
+		myMessage.messageToBePrinted = "Good evening";//see how a field of an object is manipulated
+		myOtherMessage.messageToBePrinted = "Hallo";
 
 		System.out.println("Hi world! " + myMessage.messageToBePrinted); // see how a field of an object is accessed
 
 		myMessage.printMessage(); //see how a method is called
-		myMessage.printMessageWithArgument("Another hallo world");
+		myMessage.printMessageWithArgument("Goodbye");
+		myOtherMessage.printMessage();
 	}
 
 }
