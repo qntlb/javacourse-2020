@@ -22,7 +22,7 @@ public class Leaf {
 
 	/*
 	 * The method illustrates a second use of is: the method returns a reference to the object which
-	 * calls the method (note the Leaf return). This allows multiple calling, see row 13 in MainLeaf.
+	 * calls the method (note the Leaf return). This allows multiple calling, see row 12 in MainLeaf.
 	 */
 	Leaf increment() {
 		i++;
