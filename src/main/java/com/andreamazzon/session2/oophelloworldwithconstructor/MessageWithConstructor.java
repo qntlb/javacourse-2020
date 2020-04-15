@@ -9,11 +9,11 @@ package com.andreamazzon.session2.oophelloworldwithconstructor;
  */
 public class MessageWithConstructor {
 
-	String messageToBePrinted = "a message";
-	//default constructor! Note: no return type (different from void!)
+	String messageToBePrinted = "Hello!";
+	//default constructor, because it has no arguments. Note: no return type (different from void!)
 	MessageWithConstructor() {
 		//side effect: a message is printed
-		System.out.println("A new object is created, and a new message is going to be printed");
+		System.out.println("A new object is created");
 	}
 
 	/*

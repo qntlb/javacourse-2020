@@ -10,15 +10,16 @@ package com.andreamazzon.session2.oophelloworldwithconstructor;
 public class HelloWorldWithConstructor {
 
 	public static void main(String[] args) {
-		MessageWithConstructor myMessage = new MessageWithConstructor(); // Object creation. Message() is a particular method called constructor. More about this later on
-		MessageWithConstructor myOtherMessage = new MessageWithConstructor(); //these are fields of the class OopHelloWorld
-		myMessage.messageToBePrinted = "Here is my message";//see how a field of an object is manipulated
-		myOtherMessage.messageToBePrinted = "Other message";
-
-		System.out.println("Hi world! " + myMessage.messageToBePrinted); // see how a field of an object is accessed
-
+		/*
+		 * Object creation. Message() is a particular method called constructor. Since we have defined and
+		 * implemented it, it will call "our" default constructor (look at what is going to be printed)
+		 */
+		MessageWithConstructor myMessage = new MessageWithConstructor();
+		myMessage.messageToBePrinted = "Good morning!";//see how a field of an object is manipulated
 		myMessage.printMessage(); //see how a method is called
-		myMessage.printMessageWithArgument("Another hallo world");
+
+		MessageWithConstructor myOtherMessage = new MessageWithConstructor();
+		myOtherMessage.printMessageWithArgument("Good evening!");
 	}
 
 }
