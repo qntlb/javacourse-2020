@@ -8,9 +8,16 @@ package com.andreamazzon.session2.treesconstructor;
  */
 public class Tree {
 
+	double height;
 	//constructor with a double argument
-	Tree(double height){
-		System.out.println("A new tree " + height + " meters high")	;
+	Tree(double heightOfTheNewTree){
+		System.out.println("A new tree is planted");
+		/*
+		 * note: height is the name of field of the class; heightOfTheNewTree is the name of the variable given
+		 * as an argument. If they have the same name, they both refer to the argument variable, and the
+		 * assignment has no effect. We will see a way to solve this problem.
+		 */
+		height = heightOfTheNewTree;
 	}
 
 	/*
