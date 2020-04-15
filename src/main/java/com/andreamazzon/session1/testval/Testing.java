@@ -11,7 +11,7 @@ public class Testing {
 	public static void main(String[] args) {
 		Comparison test = new Comparison(); //we construct an object of type Comparison
 		System.out.println("The result of the first test is: " + test.eval(1, 2, 3)/*method called inside the println*/);
-		System.out.println("The result of the test is: " + test.ternaryEval(1, 0, 3));
+		System.out.println("The result of the second test is: " + test.ternaryEval(1, 0, 3));
 	}
 }
 

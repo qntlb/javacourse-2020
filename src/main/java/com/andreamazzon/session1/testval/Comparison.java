@@ -30,15 +30,31 @@ public class Comparison {
 		}
 	}
 
-	//another (more compact, but sometimes less readable) way to do it:
+	//Another way to do it:
 	/**
+	 *	The method evaluates if a number is inside an interval
 	 *
-	 * @param testval: numbers which has to be tested
+	 * @param testvalue: number which has to be tested
 	 * @param begin: left end of the interval
 	 * @param end: right end of the interval
 	 * @return true if testval is inside the interval, false if not
 	 */
-	boolean ternaryEval(int testval, int begin, int end) {
+	boolean compactEval(int testvalue, int begin, int end) {
+		/*
+		 * the operator "!" applied to a boolean returns the opposite of its value: false if the value of
+		 * the boolean is true and true if it is false
+		 */
+		return !(testvalue < begin || testvalue > end);
+	}
+
+	/**
+	 *
+	 * @param testval: number which has to be tested
+	 * @param begin: left end of the interval
+	 * @param end: right end of the interval
+	 * @return 1 if testval is inside the interval, 0 if not
+	 */
+	int ternaryEval(int testval, int begin, int end) {
 		/*
 		 * Ternary if-else operator. This operator is unusual because it has three operands. It is truly an
 		 * operator because it produces a value, unlike the ordinary if-else statement.
@@ -48,6 +64,6 @@ public class Comparison {
 		 *  by the operator. If boolean-exp is false, value1 is evaluated and its result becomes the value
 		 *  produced by the operator.
 		 */
-		return (testval < begin || testval > end) ? false : true;
+		return (testval < begin || testval > end) ? 0 : 1;
 	}
 }
