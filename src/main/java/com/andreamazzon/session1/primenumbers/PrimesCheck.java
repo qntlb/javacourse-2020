@@ -16,5 +16,4 @@ public class PrimesCheck {
 		}
 		System.out.println(n + " is prime");
 	}
-
 }

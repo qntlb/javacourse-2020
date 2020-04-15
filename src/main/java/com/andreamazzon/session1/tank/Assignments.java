@@ -35,7 +35,9 @@ public class Assignments {
 		 * even if the value of the field is the same, the result will be false because tank2 and tank3 do not point to
 		 * the same object
 		 */
-		System.out.println("Is tank3 equal to tank2 ? " + (tank3 == tank2));
+		System.out.println("Is tank3 equal to tank2 ? " + (tank3 == tank2));//this is not true
+		System.out.println("Is tank3 equal to tank2 ? " + (tank3.level == tank2.level));//this is true
+
 	}
 
 }

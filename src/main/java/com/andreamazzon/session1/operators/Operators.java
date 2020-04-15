@@ -16,6 +16,8 @@ public class Operators {
 		System.out.println("The value of b is " + b);
 		b = 6; //you can modify b
 		System.out.println("The value of a is " + a);//and this does not affect a
+		System.out.println("The value of b is " + b);
+
 		/*
 		 * remember: this is not the same for objects which are not primitives: Whenever you manipulate an object,
 		 * what you’re manipulating is the reference, so when you assign “from one object to another” you’re actually
@@ -35,7 +37,7 @@ public class Operators {
 		System.out.println("The ratio of " + a + "" + " and " + b + " is " + g);
 		int g1 = (int) g; // "downcasting"
 		System.out.println("Which I remind you, is not " + g1);
-		double b1 = 6.0;
+		double b1 = 6.2;
 		double h = a + b1;
 		/*
 		 * automatic promotion; a gets promoted implicitly to a double to be summed to b1.
@@ -70,15 +72,14 @@ public class Operators {
 		System.out.println("++c: " + ++c);
 		System.out.println("--e: " + --e);
 
+		//c and e are equal to 12 and 29
 		System.out.println("c++: " + c++);
 		System.out.println("e--: " + e--);
 
-		// It appears to have stayed the same...
+		// It appears to have stayed the same...but they are now 13 and 28
 
 		System.out.println("++c :" + ++c);
 		System.out.println("--e :" + --e);
-
-		// and now the increments and decrements happened by 2. But why?
 	}
 }
 

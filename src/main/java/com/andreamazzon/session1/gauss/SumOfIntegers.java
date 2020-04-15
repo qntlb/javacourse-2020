@@ -18,7 +18,7 @@ public class SumOfIntegers {
 		System.out.println("Looping...");
 		for (int i = 0; i <= lastNumber; i++) {
 			System.out.print(i + " "); //We use print instead of println: We do not want line breaks!
-			sum += i;
+			sum += i; //sum = sum + i;
 		}
 		return sum;
 	}

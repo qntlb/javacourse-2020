@@ -15,7 +15,6 @@ public class CheckDivisible {
 			System.out.println(dividend + " is divisible by " + divisor);
 		}
 		else {
-
 			System.out.println(dividend + " is not divisible by " + divisor);
 		}
 	}

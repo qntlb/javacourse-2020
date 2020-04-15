@@ -12,5 +12,18 @@ public class Elevator {
 			System.out.println("The elevator is at floor number " + floor);
 		}
 		System.out.println("The elevator is at ground level");
+
+		//you could also write:
+		int i = 10;
+		while(i>0) {
+			int a = 1;//it will be cleared after the while cycle
+			System.out.println("The elevator is at floor number " + i);
+			i --;
+		}
+		/*
+		 * but in this way, i is not deleted after the end of the while. If you create a variable
+		 * INSIDE the while, it gets delated after the while.
+		 *
+		 */
 	}
 }

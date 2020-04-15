@@ -1,6 +1,6 @@
 package com.andreamazzon.session1.randomvariable;
 
-import java.util.Random;
+import java.util.Random;//more about importing on Friday
 
 /**
  * This class uses a do..while loop and a random number generator in order to count the number of
@@ -21,7 +21,7 @@ public class WhileRandom {
 		do {
 			numberOfFlips++; //first you flip!
 		} while (randomNumberGenerator.nextInt(2) == 0); //0 is head, 1 is tail
-		// nextInt(n) produces a random integer number smaller than n
+		// nextInt(n) produces a random natural number smaller than n
 		System.out.println("I got a tail after " + numberOfFlips + " launches");
 	}
 }
