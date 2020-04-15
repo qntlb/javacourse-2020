@@ -22,7 +22,7 @@ public class Bicycle {
 		this.gearsNumber = gearsNumber; //note the use of this
 		this.cost = cost;
 
-		costSum += cost; //the field is incremented, and will be the same for every Bycicle object
+		costSum += cost; //the field is incremented, and will be the same for every Bicycle object
 		//or costSum = costSum + cost;
 		System.out.println("This is a " + color + " bycicle, with " + gearsNumber + " gears. It costs us " + cost + " euros ");;
 		System.out.println("Total cost: " + costSum);
