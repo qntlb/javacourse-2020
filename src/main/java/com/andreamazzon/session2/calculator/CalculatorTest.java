@@ -1,8 +1,8 @@
 package com.andreamazzon.session2.calculator;
 
 /**
- * This class offers a very simple example of the fact that a static can be called without constructing an
- * object of the class where the method is defined
+ * This class offers a very simple example of the fact that a static method can be called without constructing
+ * an object of the class where the method is defined
  *
  * @author Andrea Mazzon
  *
