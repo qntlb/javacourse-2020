@@ -8,10 +8,10 @@ package com.andreamazzon.session2.cosine;
 public class CosineTest {
 
 	public static void main(String[] args) {
-		double x=1.2;
+		double angle=1.2;
 		CosineOverload cosineOverload=new CosineOverload();//construction of the object
 		//call of the method with argument double
-		System.out.println("The cosine of " + x + " is " + cosineOverload.calculateCosine(x));
+		System.out.println("The cosine of " + angle + " is " + cosineOverload.calculateCosine(angle));
 
 		double multipleOfPi = 5*Math.PI;
 		/*

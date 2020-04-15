@@ -13,22 +13,22 @@ public class CosineOverload {
 	/**
 	 * Computes the cosine of a given number
 	 *
-	 * @param double x
-	 * @return cos(x)
+	 * @param double angle, size of the angle in radians
+	 * @return cos(angle)
 	 */
-	double calculateCosine(double x){
-		if(x % Math.PI !=0) {
-			return Math.cos(x); //standard computation
-		}else {
-			int n=(int) (x/Math.PI);//ratio between x and Pi. Downcasted! We know that it s an int because x % Math.PI = 0
+	double calculateCosine(double angle){
+		if(angle % Math.PI !=0) { //the size of angle in radians is not a multiple of Pi
+			return Math.cos(angle); //standard computation
+		}else { //if the size of the angle is actually a multiple of Pi
+			int n=(int) (angle/Math.PI);//ratio between x and Pi. Downcasted! We know that it s an int because x % Math.PI = 0
 			return calculateCosine(n);//the overloaded method is called!
 		}
 	}
 
 	/**
-	 * Computes cos(x), when x=n*Pi
-	 * @param int n = x/Pi
-	 * @return cos(x)
+	 * Computes cos(angle), when angle (in radians) is a multiple of Pi, i.e., angle=n*Pi
+	 * @param int n = angle/Pi
+	 * @return cos(angle)
 	 */
 	double calculateCosine (int n){
 		System.out.println("I am using the overloaded version");
