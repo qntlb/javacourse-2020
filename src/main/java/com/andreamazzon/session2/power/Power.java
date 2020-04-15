@@ -13,32 +13,14 @@ public class Power {
 
 	double result; //only definition, not initialization
 
-	/**
-	 * It computes base to the power of exponent, when exponent is integer, so there are no problems if base
-	 * is negative.
-	 * @param base
-	 * @param exponent
+	/*
+	 * define and implement two methods computePower, with same name but different arguments lists.
+	 * In particular, one has argument list (double base, int exponent), and the other
+	 * (double base, double exponent). The first one just prints the result of the exponeniation,
+	 * using Math.pow(base, exponent), whereas the second one checks if base is negative and exponent
+	 * is not an integer (exponent is an integer if exponent == Math.floor(exponent) is true) and in this case
+	 * it prints a warning message, without computing the result. Otherwise, it computes and prints
+	 * the result.
 	 */
-	void computePower (double base, int exponent) {
-		result = Math.pow(base, exponent);//note: Java method
-		System.out.println("Computing " + base + " to the power of " + exponent + ". The result is " + result);
-	}
 
-	/**
-	 * It computes base to the power of exponent, when exponent is double, so there can be problems if base
-	 * is negative.
-	 * @param base
-	 * @param exponent
-	 */
-	void computePower (double base, double exponent) {
-		//we distinguish the two cases
-		if (base >=0 || exponent == Math.floor(exponent)) {
-			result = Math.pow(base, exponent);
-			System.out.println("Computing " + base + " to the power of " + exponent + ". The result is " + result);
-		}
-		else {
-			//we warn the user!
-			System.out.println("Computing " + base + " to the power of " + exponent + ". You might get a complex numer: is that what you want?");
-		}
-	}
 }

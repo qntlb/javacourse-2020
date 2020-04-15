@@ -13,8 +13,8 @@ public class PowerMain {
 		double base = - 0.2; //negative number!
 		int intExponent = 2;
 		double doubleExponent = 2.0;
-		powerCalculator.computePower(base, intExponent);//everything fine: the arguments are double, int
+		//powerCalculator.computePower(base, intExponent);//everything fine: the arguments are double, int
 		//the arguments are now double, double: the result can be a complex number
-		powerCalculator.computePower(base, doubleExponent);
+		//powerCalculator.computePower(base, doubleExponent);
 	}
 }
