@@ -33,7 +33,6 @@ public class Flower {
 	//default constructor
 	Flower() {
 		this("A bonus message", 42);
-
 		System.out.println("Default constructor (no args)");
 	}
 

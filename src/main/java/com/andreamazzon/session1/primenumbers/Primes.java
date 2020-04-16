@@ -8,7 +8,7 @@ package com.andreamazzon.session1.primenumbers;
 public class Primes {
 
 	public static void main(String[] args) {
-		int n =  18;
+		int n =  19;
 		PrimesCheck checker = new PrimesCheck();
 		checker.checkIfPrime(n);
 	}

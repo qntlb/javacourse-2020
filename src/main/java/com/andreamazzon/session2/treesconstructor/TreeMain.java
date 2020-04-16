@@ -12,5 +12,9 @@ public class TreeMain {
 		double treeHeight = 3.2;
 		Tree myTree = new Tree(treeHeight); //call of the constructor with the double argument
 		System.out.println("The tree is " + myTree.height + " meters high");
+
+		Tree mySecondTree = new Tree();
+		System.out.println("The tree is " + mySecondTree.height + " meters high");
+
 	}
 }

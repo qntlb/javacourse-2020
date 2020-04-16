@@ -15,23 +15,23 @@ public class Bicycle {
 	String color; //not static, for the same reason
 	double cost; //same thing
 
-
 	//constructor
 	Bicycle(int gearsNumber, double cost, String color){
 		this.color = color; //note the use of this
 		this.gearsNumber = gearsNumber; //note the use of this
 		this.cost = cost;
+		System.out.println("This is a " + color + " bycicle, with " + gearsNumber + " gears. It costs us " + cost + " euros ");
 
 		costSum += cost; //the field is incremented, and will be the same for every Bicycle object
 		//or costSum = costSum + cost;
-		System.out.println("This is a " + color + " bycicle, with " + gearsNumber + " gears. It costs us " + cost + " euros ");;
 		System.out.println("Total cost: " + costSum);
 		System.out.println();
+
 		if (costSum > 10000) {
 			//we want to known when we have exceeded the total cost of the bikes
 			System.out.println("Enough, no more money!");
 			/*
-			 * we will see maybe on Friday how to prevent the user to construct more objects of this type
+			 * we will see on Friday how to prevent the user to construct more objects of this type
 			 * (for now we can just warn him)
 			 */
 		}

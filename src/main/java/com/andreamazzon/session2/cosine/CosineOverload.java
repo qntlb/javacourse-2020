@@ -20,7 +20,7 @@ public class CosineOverload {
 		if(angle % Math.PI !=0) { //the size of angle in radians is not a multiple of Pi
 			return Math.cos(angle); //standard computation
 		}else { //if the size of the angle is actually a multiple of Pi
-			int n=(int) (angle/Math.PI);//ratio between x and Pi. Downcasted! We know that it s an int because x % Math.PI = 0
+			int n= (int) (angle/Math.PI);//ratio between x and Pi. Downcasted! We know that it s an int because x % Math.PI = 0
 			return calculateCosine(n);//the overloaded method is called!
 		}
 	}
@@ -33,10 +33,12 @@ public class CosineOverload {
 	double calculateCosine (int n){
 		System.out.println("I am using the overloaded version");
 		//cos(2*n*Pi)=1, cos((2n+1)*Pi)=-1;
-		if(n%2 == 0)
+		if(n%2 == 0) {
 			return 1;
-		else
+		}
+		else {
 			return -1;
+		}
 	}
 
 }

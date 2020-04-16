@@ -8,7 +8,7 @@ package com.andreamazzon.session2.treesconstructor;
  */
 public class Tree {
 
-	double height;
+	double height = 10;
 	//constructor with a double argument
 	Tree(double heightOfTheNewTree){
 		System.out.println("A new tree is planted");
@@ -20,8 +20,11 @@ public class Tree {
 		height = heightOfTheNewTree;
 	}
 
+	//default constructor, which in this case just do nothing. The height is left equal to 10.
+	Tree(){
+	}
 	/*
-	 * note that we don't define a default constructor: since we defined a constructor, Java will not
-	 * do it for us. If we call the default constructor in the main, we will get an error.
+	 * note that if don't define a default constructor: Java will not do it for us, and if we call the default
+	 * constructor in the main, we get an error.
 	 */
 }

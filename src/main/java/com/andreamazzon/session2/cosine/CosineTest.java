@@ -13,7 +13,7 @@ public class CosineTest {
 		//call of the method with argument double
 		System.out.println("The cosine of " + angle + " is " + cosineOverload.calculateCosine(angle));
 
-		double multipleOfPi = 5*Math.PI;
+		double multipleOfPi = 6 * Math.PI;
 		/*
 		 * the method with argument double is first called. Anyway, it will call the overloaded method with
 		 * int argument (see the implementation)

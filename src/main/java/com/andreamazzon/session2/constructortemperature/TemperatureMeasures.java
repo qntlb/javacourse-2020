@@ -15,7 +15,7 @@ public class TemperatureMeasures {
 		Temperature t2 = new Temperature(18.5);
 		System.out.println("The temperature is " + t2.temperature);
 
-		Temperature t3 = new Temperature();//overloaded constructor: the value of the temperature is left equal to 0
+		Temperature t3 = new Temperature();//default constructor: the value of the temperature is left equal to 0
 		System.out.println("The temperature is " + t3.temperature);
 	}
 

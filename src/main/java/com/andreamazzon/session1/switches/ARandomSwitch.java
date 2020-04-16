@@ -14,7 +14,7 @@ public class ARandomSwitch {
 	public static void main(String[] args) {
 		Random randomNumberGenerator = new Random(); //current time as a seed for the random number generator
 		int switchValue = randomNumberGenerator.nextInt(9);
-		switch (switchValue /*integer between 1 and 8*/ ) {
+		switch (switchValue /*integer between 0 and 8*/ ) {
 		/*
 		 * The switch compares now the value of switchValue to each value listed below. If it finds a match,
 		 * the corresponding statement executes. If no match occurs, the default statement executes.
