@@ -52,17 +52,12 @@ public class Bicycle {
 	 */
 	//Static: its implementation does not depend on non static fields and non static methods of the class
 	public static Bicycle constructBicycle(int gearsNumber, double cost, String color) {
-		costSum += cost; //the field is immediately incremented, and is the same for every Bicycle object
-		//or costSum = costSum + cost;
-		if (costSum <= maximumBudget) {
-			//the private constructor is called, from inside the class: fine
-			Bicycle newBike = new Bicycle(gearsNumber, cost, color);
-			return newBike;
-		}
-		else {
-			System.out.println("Enough, no more money!");
-			//we have to return an object of type Bicycle, but we don't want to construct any! A solution is to return null
-			return null;
-		}
+		//your code here:
+		/*
+		 * -update costSum, summing cost to the old value;
+		 * – call the private constructor if costSum <= maximumBudget;
+		 * – print a message saying that we have no more money and return null if costSum > maximumBudget.
+		 */
+		return null;//change it!
 	}
 }
