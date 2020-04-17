@@ -1,4 +1,4 @@
-package com.andreamazzon.session3.gas;
+package com.andreamazzon.session3.encapsulation.gas;
 
 import static com.andreamazzon.session3.useful.Print.printn;
 
