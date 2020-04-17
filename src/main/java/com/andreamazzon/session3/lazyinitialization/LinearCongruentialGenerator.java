@@ -12,10 +12,11 @@ package com.andreamazzon.session3.lazyinitialization;
  *
  * We have a method generate() which generates all the sequence (i.e., an array), up to the number of pseudo random
  * integers we want to simulate.
- * We also have a public method getNextInteger() that returns the next integer x[count + 1], where count gets incremented by
- * 1 every time the method is called. Of course we don't want all the sequence to be generated again every time the
- * user calls getNextInteger(). We then use lazy initialization. The sequence is generated just once, i.e., in
- * getNextInteger() we check if it has been already initialized. In order to do that, the best practice is to make
+ * We also have two public methods, getRandomNumberSequence( and getNextInteger(), that return all the sequence and the
+ * next integer x[count + 1], where count gets incremented by 1 every time the method is called, respectively.
+ * We want that the sequence is generated for the first time only when one of these methods is called by the user: this is called
+ * "lazy initialization". Moreoever, of course we don't want all the sequence to be generated again every time the
+ * user calls one of the methods. We then check if it has been already initialized. In order to do that, the best practice is to make
  * generate() private, as well as the sequence itself.
  *
  * Another thing you see for the first time is the primitive data type long, which expresses an integer number as int
@@ -63,7 +64,8 @@ public class LinearCongruentialGenerator {
 	 * @return the sequence of pseudo random numbers
 	 */
 	public long[] getRandomNumberSequence() {
-		if (randomNumbers == null) {// lazy initialization: the pseudo random sequence is generated only once
+		// lazy initialization: the pseudo random sequence is generated only the first time one of two methods is called.
+		if (randomNumbers == null) {
 			generate();
 			return randomNumbers;
 		}
@@ -76,7 +78,8 @@ public class LinearCongruentialGenerator {
 	 * @return the next number of the sequence of pseudo random numbers
 	 */
 	public long getNextInteger() {
-		if (randomNumbers == null) {// lazy initialization: the pseudo random sequence is generated only once
+		// lazy initialization: the pseudo random sequence is generated only the first time one of two methods is called
+		if (randomNumbers == null) {
 			generate();
 		}
 		return randomNumbers[count++];
