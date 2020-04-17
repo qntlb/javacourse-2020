@@ -1,4 +1,4 @@
-package com.andreamazzon.session3.privateconstructor;
+package com.andreamazzon.session3.privateconstructor.countingObjects;
 
 /*
  * import static: allows members (fields and methods) which have been "defined" as public static,

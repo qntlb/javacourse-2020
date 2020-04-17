@@ -1,4 +1,4 @@
-package com.andreamazzon.session3.logarithm;
+package com.andreamazzon.session3.encapsulation.logarithm;
 
 import static com.andreamazzon.session3.useful.Print.print;
 

@@ -1,4 +1,4 @@
-package com.andreamazzon.session3.bicycleenhanced;
+package com.andreamazzon.session3.privateconstructor.bicycleenhanced;
 
 /**
  * This class is strictly related to com.andreamazzon.session2.bicycles.Bicycle, that was an example of a

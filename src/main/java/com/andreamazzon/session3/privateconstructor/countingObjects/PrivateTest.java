@@ -1,4 +1,4 @@
-package com.andreamazzon.session3.privateconstructor;
+package com.andreamazzon.session3.privateconstructor.countingObjects;
 
 /**
  * This class shows the use of the class PrivateConstructorClass. We see how, thanks to

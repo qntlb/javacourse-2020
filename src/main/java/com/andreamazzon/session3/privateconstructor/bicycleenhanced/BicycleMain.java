@@ -1,4 +1,4 @@
-package com.andreamazzon.session3.bicycleenhanced;
+package com.andreamazzon.session3.privateconstructor.bicycleenhanced;
 
 
 /**

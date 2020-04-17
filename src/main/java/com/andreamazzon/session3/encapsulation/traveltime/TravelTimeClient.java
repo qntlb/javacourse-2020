@@ -1,4 +1,4 @@
-package com.andreamazzon.session3.traveltime;
+package com.andreamazzon.session3.encapsulation.traveltime;
 
 import static com.andreamazzon.session3.useful.Print.printn;
 /**

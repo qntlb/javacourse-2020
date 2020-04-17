@@ -1,4 +1,4 @@
-package com.andreamazzon.session3.complexes;
+package com.andreamazzon.session3.encapsulation.complexes;
 
 import static com.andreamazzon.session3.useful.Print.print;
 import static com.andreamazzon.session3.useful.Print.printn;
