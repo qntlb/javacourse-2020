@@ -28,7 +28,8 @@ public class LogarithmCalculator {
 			this.number = number; //note the use of this
 		} else {
 			print("This has to be a positive number");
-		}	}
+		}
+	}
 
 	//method that computes the logarithm
 	public double computeLogarithm() {
