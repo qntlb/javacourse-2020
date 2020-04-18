@@ -15,7 +15,7 @@ public class LogarithmClient {
 
 		LogarithmCalculator logarithmExample = new LogarithmCalculator();
 		double inputNumber = -3;
-		//logarithmExample.exponential = inputNumber; //private field!
+		//logarithmExample.number = inputNumber; //private field!
 		logarithmExample.setNumber(inputNumber); //use of setter
 		/*
 		 * look at was does it happen if inputNUmber is negative: in this case, logarithmExample.number is

@@ -23,7 +23,7 @@ public class LogarithmCalculator {
 
 	//setter: only way to set the value of the private field number
 	public void setNumber(double number) {
-		//write your code here: you have to set the number if it is > 0, and return a warning message otherwise
+		//write your code here: you have to set this.number = number if number > 0, and return a warning message otherwise
 	}
 
 	//method that computes the logarithm
