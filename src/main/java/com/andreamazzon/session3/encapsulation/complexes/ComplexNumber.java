@@ -16,7 +16,6 @@ public class ComplexNumber {
 	private double r;
 	private double theta;
 
-
 	/*
 	 * private constructor! Does not have to be known by the front end user, it just gets called from inside the class
 	 * when we want to construct an object of this type (i.e., with polar coordinates) from the cartesian coordinates
@@ -27,6 +26,12 @@ public class ComplexNumber {
 		this.theta=theta;
 	}
 
+	//Setter the user wants: he only understands Cartesian representation
+	public static ComplexNumber setComplexNumber(double realPart, double imaginaryPart) {
+		double radius = Math.sqrt(realPart*realPart+imaginaryPart*imaginaryPart);
+		double angle = Math.atan2(imaginaryPart,realPart);
+		return new ComplexNumber(radius, angle);//the private constructor gets called
+	}
 
 	/*
 	 * We translate from the polar coordinates of the object which is calling the method to cartesian ones
@@ -42,13 +47,6 @@ public class ComplexNumber {
 		return r*Math.sin(theta);
 	}
 
-
-	//Setter the user wants: he only understands Cartesian representation
-	public static ComplexNumber setComplexNumber(double realPart, double imaginaryPart) {
-		double radius = Math.sqrt(realPart*realPart+imaginaryPart*imaginaryPart);
-		double angle = Math.atan2(imaginaryPart,realPart);
-		return new ComplexNumber(radius, angle);//the private constructor gets called
-	}
 
 	/**
 	 * @return the conjugate of the complex number represented by the object calling the method
@@ -84,7 +82,7 @@ public class ComplexNumber {
 	 */
 	public ComplexNumber product(ComplexNumber complexNumber){
 		//the product is more efficiently computed in polar coordinates!
-		return new ComplexNumber(r*complexNumber.r,theta+complexNumber.theta);
+		return new ComplexNumber(r * complexNumber.r,theta + complexNumber.theta);
 	}
 
 	/**
@@ -92,13 +90,13 @@ public class ComplexNumber {
 	 * calling the method
 	 */
 	private String imaginarySign () {
-		return getImaginaryPart() >=0 ?  "+ ": "- ";
+		return (getImaginaryPart() >=0) ?  "+ ": "- ";
 	}
 
 	/**
 	 * prints a complex number
 	 */
-	public void show(){
+	public void show(){//a + b i
 		if (getImaginaryPart() !=0.0){
 			print(getRealPart() + " " + imaginarySign() //gets the right sign  BEFORE the imaginary unit!
 			+ Math.abs(getImaginaryPart()) + " i ");
@@ -107,6 +105,7 @@ public class ComplexNumber {
 			print(getRealPart()); //removes "i 0"
 		}
 	}
+
 
 	/**
 	 * prints a complex number followed by new line

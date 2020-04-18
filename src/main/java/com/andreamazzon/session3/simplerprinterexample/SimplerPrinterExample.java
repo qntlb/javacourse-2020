@@ -1,5 +1,7 @@
 package com.andreamazzon.session3.simplerprinterexample;
 
+import com.andreamazzon.session3.useful.Print;
+
 /*
  * import static: allows members (fields and methods) which have been "defined" as public static,
  * to be used without specifying the class in which the field has been defined.
@@ -12,9 +14,8 @@ package com.andreamazzon.session3.simplerprinterexample;
  *
  * @author: Andrea Mazzon
  */
-//import com.andreamazzon.useful.Print;
-//import static java.lang.System.*;
-import static com.andreamazzon.session3.useful.Print.printn;
+//import static com.andreamazzon.session3.useful.Print.printn;
+
 
 /**
  * This class uses a method of a class of an external package
@@ -24,6 +25,6 @@ import static com.andreamazzon.session3.useful.Print.printn;
  */
 public class SimplerPrinterExample {
 	public static void main(String[] args) {
-		printn("Printing is now much simpler");
+		Print.printn("Printing is now much simpler");
 	}
 }

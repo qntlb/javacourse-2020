@@ -15,7 +15,7 @@ package com.andreamazzon.session3.lazyinitialization;
  * We also have two public methods, getRandomNumberSequence( and getNextInteger(), that return all the sequence and the
  * next integer x[count + 1], where count gets incremented by 1 every time the method is called, respectively.
  * We want that the sequence is generated for the first time only when one of these methods is called by the user: this is called
- * "lazy initialization". Moreoever, of course we don't want all the sequence to be generated again every time the
+ * "lazy initialization". Moreover, of course we don't want all the sequence to be generated again every time the
  * user calls one of the methods. We then check if it has been already initialized. In order to do that, the best practice is to make
  * generate() private, as well as the sequence itself.
  *
@@ -33,7 +33,7 @@ public class LinearCongruentialGenerator {
 	private final long a = 25214903917L; //if I don't put L after the number, it will complain that is out of range
 	private final long c = 11;//automatic upcasting
 	private long seed; // it will be the first entry of our pseudo random number list
-	private int numberOfPseudoRandomNumbers = 1000;//default value
+	private int numberOfPseudoRandomNumbers;//default value
 	private int count = 1;
 
 	// constructor

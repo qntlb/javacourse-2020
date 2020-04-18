@@ -15,7 +15,7 @@ public class ArrayRandom {
 		Random rand=new Random(); //random numbers generator
 		int length = rand.nextInt(20); //(pseudo)random integer between 0 and 19
 
-		int[] a = new int[length]; //
+		int[] a = new int[length];
 		//or:
 		//int a[] = new int[length]; //the same
 		/*
@@ -33,9 +33,9 @@ public class ArrayRandom {
 		//length method of an array! Of course an array is an object
 		System.out.println("The length of the array a is "+ a.length);
 
-		for(int i=0; i<a.length; i++) { //note: int i=0; i<a.length: the first element is a[0]
+		for(int i=0; i < a.length; i++) { //note: int i=0; i<a.length: the first element is a[0]
 			//you cannot go out of bounds: you would get a runtime error
-			a[i]=rand.nextInt(500);  //(pseudo)random integer between 0 and 499
+			a[i] = rand.nextInt(500);  //(pseudo)random integer between 0 and 499
 		}
 
 		System.out.println("The array a is now " + Arrays.toString(a));
@@ -59,7 +59,8 @@ public class ArrayRandom {
 		 * clone() method: creates and returns a copy of the object, with the same
 		 * class and with all the fields having the same values, but not with same reference
 		 */
-		int[] e=c.clone();
+		int[] e = c.clone();
+		int[] f = new int[10];
 		System.out.println("e is " + Arrays.toString(e));
 		c[2]=10;
 		System.out.println("c is now " + Arrays.toString(c));

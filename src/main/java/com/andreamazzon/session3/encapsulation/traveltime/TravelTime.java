@@ -37,12 +37,12 @@ public class TravelTime {
 
 	public void setDistance(double distanceInKm){
 		//the client sets the distance in km, but we have to convert it in miles
-		this.distance=kmToMiles(distanceInKm);
+		distance=kmToMiles(distanceInKm);
 	}
 
 	public void setSpeed(double speedInKm){
 		//the client sets the speed in km, but we have to convert it in miles
-		this.speed=kmToMiles(speedInKm);
+		speed=kmToMiles(speedInKm);
 	}
 
 

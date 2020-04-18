@@ -13,17 +13,17 @@ import static com.andreamazzon.session3.useful.Print.printn;
  */
 public class Gas {
 
-	private double temperature; //it should be Kelvin: private, the client does not see it
+	private double temperatureKelvin; //it should be Kelvin: private, the client does not see it
 	private double pressure; //Pascal
 
-	final private double gayLussacConstant=8.3145; //final keyworld: it can not be modified
+	private final double gayLussacConstant=8.3145; //final keyworld: it can not be modified
 
-	private void kelvinToFahreneit(){   //Transformations for outputs
-		temperature=temperature*9/5-459.67;
+	private static double kelvinToFahrenheit(double temperatureKelvin){   //Transformations for outputs
+		return temperatureKelvin*9/5-459.67;
 	}
 
-	private void fahrenheitToKelvin(){ //Transformation for inputs
-		temperature = (temperature+459.67)*5/9;
+	private static double fahrenheitToKelvin(double temperatureFahrenheit){ //Transformation for inputs
+		return (temperatureFahrenheit+459.67)*5/9;
 	}
 
 	/*
@@ -31,8 +31,7 @@ public class Gas {
 	 * (we work with Kelvin, the client wants to read Fahreneit)
 	 */
 	public double getTemperature() {
-		kelvinToFahreneit();
-		return temperature;
+		return kelvinToFahrenheit(temperatureKelvin);
 	}
 
 	/*
@@ -40,14 +39,13 @@ public class Gas {
 	 * (we work with Kelvin, the client wants to set Fahreneit)
 	 */
 	public void setTemperature(double temperature) {
-		this.temperature = temperature;
-		fahrenheitToKelvin();
-		printn("The temperature in Kelvin is now " + this.temperature);
+		temperatureKelvin = fahrenheitToKelvin(temperature);
+		printn("The temperature in Kelvin is now " + temperatureKelvin);
 	}
 
 	//Calculates pressure- Gay Lussac Law. The temperature has to be in Kelvin
 	private void calculatePressure(){
-		pressure=temperature*gayLussacConstant;
+		pressure=temperatureKelvin*gayLussacConstant;
 	}
 
 	//getter of the pressure: of course public

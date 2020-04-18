@@ -4,7 +4,7 @@ import static com.andreamazzon.session3.useful.Print.print;
 
 //importing the classes needed
 import com.andreamazzon.session3.accesslevels.Access;
-
+//import com.andreamazzon.session3.accesslevels.PackageAccessOnly;
 /**
  * This class shows the difference between package access and public access: we try to call methods of the class
  * com.andreamazzon.session3.accesslevels.Access() and see what happens

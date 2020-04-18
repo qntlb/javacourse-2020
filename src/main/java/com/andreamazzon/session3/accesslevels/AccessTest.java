@@ -21,7 +21,7 @@ public class AccessTest {
 
 		access.publicMethod();//fine, this method is public: it can be called from anywhere
 		access.packageAccessMethod();//fine, this method has no access modifier: it can be called from inside the package
-		//access.privateMethod(); this method is private! Not possible to call it from outside tha class
+		//access.privateMethod(); //this method is private! Not possible to call it from outside tha class
 
 		printn("The package asset field is " + access.packageAccessField);
 		printn("The public asset field is " + access.publicField);

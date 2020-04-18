@@ -6,7 +6,7 @@ package com.andreamazzon.session3.packageimporting;
  */
 //Both packages have a Vector class
 import static com.andreamazzon.session3.useful.Print.printn;
-import static java.lang.Math.sqrt;
+//import static java.lang.Math.sqrt;
 
 import java.util.Vector;
 
@@ -32,10 +32,10 @@ public class Imports {
 
 		printn("Enough with System.out.println()!!");
 		double n=3;
-		printn("Enough with Math.sqrt(" + n + ")="+sqrt(n)+"!");//import static!
+		printn("Enough with Math.sqrt(" + n + ")="+Math.sqrt(n)+"!");//import static!
 
 		//if I write it in this way, I can avoid the import. It knows that I need our class so no collision
-		com.andreamazzon.session3.useful.Vector v2 = new com.andreamazzon.session3.useful.Vector();
+		com.andreamazzon.session3.useful.Vector v2 = new com.andreamazzon.session3.useful.Vector();//mine here
 
 		Vector v1 = new Vector(); //it knows this is the Java class (imported)
 

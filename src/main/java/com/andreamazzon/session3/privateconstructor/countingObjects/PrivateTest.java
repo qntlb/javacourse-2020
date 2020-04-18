@@ -13,6 +13,7 @@ public class PrivateTest{
 		//the private constructor is called from inside the class VaryPrivateClass
 		PrivateConstructorClass firstObject= PrivateConstructorClass.CreateOneObject();
 		PrivateConstructorClass secondObject= PrivateConstructorClass.CreateOneObject();
+		PrivateConstructorClass thirdObject= PrivateConstructorClass.CreateOneObject();
 	}
 
 

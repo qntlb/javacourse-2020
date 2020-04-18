@@ -13,7 +13,7 @@ public class ComplexClient {
 	public static void main(String[] args) {
 
 		//note: we can not use the (private!) constructor
-		ComplexNumber complexNumber = ComplexNumber.setComplexNumber(3, 4);
+		ComplexNumber complexNumber = ComplexNumber.setComplexNumber(3.0, 4.0);
 
 		//prints
 		complexNumber.showWithNewLine();

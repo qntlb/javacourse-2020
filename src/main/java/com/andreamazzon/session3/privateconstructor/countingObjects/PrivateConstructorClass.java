@@ -26,11 +26,12 @@ public class PrivateConstructorClass{
 	 * to create an object of such class to call it. The method returns a reference to an object, not the data
 	 * within the object
 	 */
-	public static PrivateConstructorClass CreateOneObject(){
-		if (howManyObjects < 1) {
+	public static PrivateConstructorClass CreateOneObject() {
+		if (howManyObjects < 2) {
 			howManyObjects ++;
+			PrivateConstructorClass newObject = new PrivateConstructorClass();
 			//the constructor can of course be accessed from inside the class
-			return new PrivateConstructorClass();
+			return newObject;
 		}
 		//you have to place a return, otherwise the compilator complains
 		return null; //no need for else: if howManyObjects = 0, returns immediately exit the method
