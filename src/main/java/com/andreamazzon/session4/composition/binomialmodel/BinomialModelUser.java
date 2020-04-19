@@ -18,24 +18,16 @@ import com.andreamazzon.session4.usefulmatrices.UsefulMethodsMatricesVectors;
  *
  */
 public class BinomialModelUser {
-	BinomialModelSimulator binomialModelSimulator;//to simulate the values of S
+	private BinomialModelSimulator binomialModelSimulator;//to simulate the values of S
 
-	int numberOfSimulations;//number of simulated values at every time
-	int lastTime;//last time of the paths
 
 	//realizations of S. The matrix will be filled by the getRealizations() method of binomialModelSimulator
-	double[][] realizations;
+	private double[][] realizations;
 
 	//constructor: based on the one of BinomialModelSimulator.
 	BinomialModelUser(double initialValue, double increaseIfUp, double decreaseIfDown, double interestRate, int seed,
 			int lastTime, int numberOfSimulations){
-		/*
-		 * the only ones that are then set to the fields are numberOfSimulations and lastTime, because
-		 * we need them somewhere else in the class. The others are just passed to the constructor of
-		 * BinomialModelSimulator
-		 */
-		this.numberOfSimulations = numberOfSimulations;
-		this.lastTime = lastTime;
+
 		binomialModelSimulator = new BinomialModelSimulator(initialValue, increaseIfUp, decreaseIfDown, interestRate,
 				seed, lastTime, numberOfSimulations);
 	}
