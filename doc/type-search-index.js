@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"com.andreamazzon.session3.useful","l":"Print"}]
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"com.andreamazzon.session4.polymorphism.shapes","l":"RandomShapeGenerator"}]
