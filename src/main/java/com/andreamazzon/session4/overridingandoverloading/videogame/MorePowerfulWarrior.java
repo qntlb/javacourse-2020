@@ -17,10 +17,16 @@ public class MorePowerfulWarrior extends Warrior {
 	MorePowerfulWarrior(){
 		System.out.println("A more powerful one");//constructor of the derived class. We don't call the super one.
 	}
+
 	/**
 	 * Causes damages to an enemy. Overridden because it causes more damages than an object of the base class.
 	 *
 	 * @param warrior, the enemy
+	 */
+	/*
+	 * note the @Override annotation: if we use it, we get an error if our method is not overriding a method
+	 * of the parent class. This is useful to avoid mistakes (for example we are accidentally changing the name
+	 * of the method)
 	 */
 	@Override
 	public void damage(Warrior warrior) {
