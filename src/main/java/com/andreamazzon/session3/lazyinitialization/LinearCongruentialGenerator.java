@@ -52,14 +52,14 @@ public class LinearCongruentialGenerator {
 		for (int indexOfInteger = 0; indexOfInteger < numberOfPseudoRandomNumbers; indexOfInteger++) {
 			long congruence = ((a * randomNumbers[indexOfInteger] + c) % modulus);
 			if (congruence < 0) {
-				congruence += modulus;//otherwise we would get a negative number, because of the way "%" works in Java
+				congruence += modulus;//otherwise we would get a negative number, because of possible overflows
 			}
 			randomNumbers[indexOfInteger + 1] = congruence;
 		}
 	}
 
 	/**
-	 * getter method for the sequence of pseudo random numbers
+	 * getter method for the sequence of pseudo random natural numbers
 	 *
 	 * @return the sequence of pseudo random numbers
 	 */
@@ -78,10 +78,25 @@ public class LinearCongruentialGenerator {
 	 * @return the next number of the sequence of pseudo random numbers
 	 */
 	public long getNextInteger() {
-		// lazy initialization: the pseudo random sequence is generated only the first time one of two methods is called
-		if (randomNumbers == null) {
-			generate();
-		}
-		return randomNumbers[count++];
+		long[] sequence = getRandomNumberSequence();//it gets really generated only once
+		return sequence[count++];
+	}
+
+	/**
+	 * getter method for the modulus
+	 *
+	 * @return the modulus of the congruence that generates the pseudo random numbers
+	 */
+	public long getModulus() {
+		return modulus;
+	}
+
+	/**
+	 * getter method for the length of the simulated sequence
+	 *
+	 * @return the length of the simulated sequence
+	 */
+	public int getNumberOfPseudoRandomNumbers() {
+		return numberOfPseudoRandomNumbers;
 	}
 }
