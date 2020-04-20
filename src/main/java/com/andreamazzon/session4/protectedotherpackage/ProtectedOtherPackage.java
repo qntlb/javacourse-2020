@@ -10,14 +10,15 @@ import static com.andreamazzon.session3.useful.Print.printn;
  *
  */
 public class ProtectedOtherPackage {
+
 	protected int i = 6;
 
 	protected void makeDouble() {
 		printn("A protected method in the another package. You can call it when you inherit");
-		i = i*2;
+		i *= 2;
 	}
 
 	void makeHalf() {
-		i = i/2;
+		i /= 2;
 	}
 }

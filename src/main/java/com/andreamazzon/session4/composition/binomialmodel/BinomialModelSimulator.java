@@ -18,6 +18,9 @@ import com.andreamazzon.session3.lazyinitialization.LinearCongruentialGenerator;
  * in the Finmath library.
  *
  */
+
+
+//S[i][j]=S(i,omega(j))
 public class BinomialModelSimulator
 {
 	private double initialValue; //S(0)
@@ -61,22 +64,25 @@ public class BinomialModelSimulator
 	 */
 	private long convert() {
 		//modulus is private, but we have the getter
-		return Math.round(riskNeutralProbabilityUp*randomGenerator.getModulus());
+		return Math.round(riskNeutralProbabilityUp * randomGenerator.getModulus());
 	}
+
+	//random number = 0,1,2,.....,modulus-1
 
 	/*
 	 *  generation of the process of ups and downs, i.e., M such that
 	 *  S(i+1) = S(i)*M(i)
 	 */
+	//upsAndDowns[i][j]=M(i,omega(j))
 	private double[][] generateUpsAndDowns() {
 		//rows are simulation at given time, columns paths
 		upsAndDowns = new double[lastTime][numberOfSimulations];
-		long numberOfUpCases = convert();//if the simulated number is less than this, we have up
+		long threshold = convert();//if the simulated number is less than this, we have up
 		//double for loop, time and simulations
 		for (int timeIndex = 0; timeIndex < lastTime; timeIndex ++) {
 			for (int simulationIndex = 0; simulationIndex < numberOfSimulations; simulationIndex ++) {
 				//the way we convert the probability into a condition on the generated numbers
-				if (randomGenerator.getNextInteger() < numberOfUpCases) {
+				if (randomGenerator.getNextInteger() < threshold) {
 					upsAndDowns[timeIndex][simulationIndex] = increaseIfUp;
 				}
 				else {

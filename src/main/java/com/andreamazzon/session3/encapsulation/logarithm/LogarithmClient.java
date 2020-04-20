@@ -25,5 +25,4 @@ public class LogarithmClient {
 		printn("Your input number is " + logarithmExample.getNumber()); //use of getter
 		printn("The logarithm of " + logarithmExample.getNumber() + " is " +logarithmExample.computeLogarithm());
 	}
-
 }

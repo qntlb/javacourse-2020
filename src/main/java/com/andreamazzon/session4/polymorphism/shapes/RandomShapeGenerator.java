@@ -30,8 +30,6 @@ public class RandomShapeGenerator {
 		this.radiusOfCircle = radiusOfCircle;
 	}
 
-
-
 	Shape nextShape() { // Upcasting in the return type
 		switch (rand.nextInt(3)) {//0,1 or 2
 		/*
@@ -40,11 +38,12 @@ public class RandomShapeGenerator {
 		 */
 		default: ; //compulsory. Can you tell why it has to be at the beginning?
 		case 0:
-			return null;//new Circle(radiusOfCircle); // upcasted to Shape.
+			Circle newCircle = new Circle(radiusOfCircle);
+			return newCircle; // upcasted to Shape.
 		case 1:
-			return null;//;new Square(sideOfSquare); // upcasted to Shape
+			return new Square(sideOfSquare); // upcasted to Shape
 		case 2:
-			return null;//new Triangle(basisOfTriangle , heightOfTriangle); // upcasted to Shape
+			return new Triangle(basisOfTriangle , heightOfTriangle); // upcasted to Shape
 		}
 	}
 }

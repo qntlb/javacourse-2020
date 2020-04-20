@@ -10,14 +10,14 @@ import static com.andreamazzon.session3.useful.Print.printn;
  */
 public class GoalKeeper {
 
-	private int age;
-	private double marketValue;
+	protected int age;
+	protected double marketValue;
 
 	GoalKeeper() { //constructor: it will be called by the constructor of the derived class
 		printn("My task is to prevent the opponent to score");
 	}
 
-	void save() {//this method will be inherited from the derived class
+	protected void save() {//this method will be inherited from the derived class
 		printn("You will not score");
 	}
 

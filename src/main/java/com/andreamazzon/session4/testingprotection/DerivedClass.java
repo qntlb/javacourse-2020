@@ -28,18 +28,19 @@ public class DerivedClass extends ProtectedOtherPackage {
 		printn(i);
 	}
 
-	void derivedMakeDouble(){
+	void computeSinOfDouble(){
 		/*
 		 * makeDouble() gets inherited from the base class. It can be called from outside the package of the class
 		 * where it is defined because it is protected. Try to go in ProtectedOtherPackage and make it with
 		 * just package access. You see hat now you get an error here.
 		 */
 		makeDouble();
+		Math.sin(i);
 	}
 
 	void derivedMakeHalf(){
 		//you can't call makeHalf() because it is not protected!
-		//this.makeHalf();
+		//makeHalf();
 	}
 }
 

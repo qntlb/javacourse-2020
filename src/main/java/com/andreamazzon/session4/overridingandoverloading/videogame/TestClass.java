@@ -9,6 +9,7 @@ package com.andreamazzon.session4.overridingandoverloading.videogame;
 public class TestClass {
 
 	public static void main(String[] args) {
+
 		Warrior warrior = new Warrior();
 		Warrior enemyWarrior = new Warrior();
 
@@ -33,6 +34,8 @@ public class TestClass {
 		morePowerfulWarrior.damage(newBuilding);
 
 		System.out.println("And now " + newBuilding.healthPoints + " health points");
+
+		morePowerfulWarrior.move(10, 20);
 
 	}
 }

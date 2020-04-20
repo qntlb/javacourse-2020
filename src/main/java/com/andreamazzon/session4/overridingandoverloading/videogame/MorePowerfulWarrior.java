@@ -30,7 +30,7 @@ public class MorePowerfulWarrior extends Warrior {
 	 */
 	@Override
 	public void damage(Warrior warrior) {
-		warrior.healthPoints -= impactOnWarriors + strengthening;
+		warrior.healthPoints -= (impactOnWarriors + strengthening);
 	}
 
 	/**

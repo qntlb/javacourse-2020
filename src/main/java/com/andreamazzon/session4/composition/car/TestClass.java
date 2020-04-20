@@ -11,5 +11,8 @@ public class TestClass {
 	public static void main(String[] args) {
 		Car car=new Car();
 		car.start();//look at it: it delegates
+
+		DerivedCar derivedCar = new DerivedCar();
+		derivedCar.start();
 	}
 }

@@ -14,11 +14,13 @@ import static com.andreamazzon.session3.useful.Print.printn;
 public class ModernGoalKeeper extends GoalKeeper {
 
 	ModernGoalKeeper() { //it automatically calls also the constructor of the base class
+		age = 20;
 		printn("But I have also to play the ball");
 	}
 
-
 	void playTheBall() { // this is a specific method of the derived class
+		printn("First I save");
+		save();
 		printn("I make a good pass for my mitfielder");
 	}
 }

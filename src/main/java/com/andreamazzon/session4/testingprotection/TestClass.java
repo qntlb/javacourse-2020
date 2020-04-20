@@ -30,7 +30,7 @@ public class TestClass {
 		DerivedClass derived = new DerivedClass(10);
 		printn("The value of the field that the derived class inherits from the base one is  ");
 		derived.printField();
-		derived.derivedMakeDouble();
+		derived.computeSinOfDouble();
 		printn("And now  ");
 		derived.printField();
 	}

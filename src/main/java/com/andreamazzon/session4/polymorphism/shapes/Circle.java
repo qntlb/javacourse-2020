@@ -9,6 +9,21 @@ package com.andreamazzon.session4.polymorphism.shapes;
  */
 public class Circle extends Shape {
 
-	//your code here
+	private double radius;
+
+	Circle(double radius){
+		this.radius = radius;
+	}
+
+	/*
+	 * note the @Override annotation: if we use it, we get an error if our method is not overriding a method
+	 * of the parent class. This is useful to avoid mistakes (for example we are accidentally changing the name
+	 * of the method)
+	 */
+	@Override
+	double computeArea() {
+		System.out.println("Computing the area of this circle..");
+		return Math.PI*radius*radius;
+	}
 
 }

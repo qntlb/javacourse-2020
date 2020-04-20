@@ -1,6 +1,6 @@
 package com.andreamazzon.session3.encapsulation.logarithm;
 
-import static com.andreamazzon.session3.useful.Print.print;
+import static com.andreamazzon.session3.useful.Print.printn;
 /**
  * This class illustrates an use of encapsulation, i.e., wrapping data and methods within classes in combination
  * with access control.
@@ -27,7 +27,7 @@ public class LogarithmCalculator {
 		if (number>0) {//controls if the value is positive!
 			this.number = number; //note the use of this
 		} else {
-			print("This has to be a positive number");
+			printn("This has to be a positive number");
 		}
 	}
 
