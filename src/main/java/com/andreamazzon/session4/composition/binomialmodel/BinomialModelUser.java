@@ -39,7 +39,7 @@ public class BinomialModelUser {
 
 	//overloaded constructor: if not specified, the seed is 1897. Note the use of this!
 	BinomialModelUser(double initialValue, double increaseIfUp, double decreaseIfDown, int lastTime, int numberOfSimulations){
-		this(increaseIfUp, decreaseIfDown, 0, 1897, lastTime, numberOfSimulations);
+		this(initialValue, increaseIfUp, decreaseIfDown, 0, 1897, lastTime, numberOfSimulations);
 	}
 
 	//the realizations are generated with DELEGATION to the method of binomialModelSimulator

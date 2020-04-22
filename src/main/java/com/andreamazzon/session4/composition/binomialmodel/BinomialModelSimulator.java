@@ -53,7 +53,7 @@ public class BinomialModelSimulator
 
 	//overloaded constructor: if not specified, the seed is 1897
 	BinomialModelSimulator(double initialValue, double increaseIfUp, double decreaseIfDown, int lastTime, int numberOfSimulations){
-		this(increaseIfUp, decreaseIfDown, 0, 1897, lastTime, numberOfSimulations);
+		this(initialValue, increaseIfUp, decreaseIfDown, 0, 1897, lastTime, numberOfSimulations);
 	}
 
 	/*
