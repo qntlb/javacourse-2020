@@ -26,7 +26,6 @@ public class TestClass {
 		GoalKeeper upcastedModern = new ModernGoalKeeper();
 		upcastedModern.save();
 		System.out.println("Value of upcasted: " + upcastedModern.marketValue);//value of the field of the base class
-		//upcastedModern.playTheBall;//he cannot!
+		//upcastedModern.playTheBall();//he cannot!
 	}
-
 }

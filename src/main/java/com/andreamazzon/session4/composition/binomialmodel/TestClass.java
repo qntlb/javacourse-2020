@@ -18,7 +18,7 @@ public class TestClass {
 		int seed = 1897;
 		int lastTime = 10;
 		int numberOfSimulations = 1000000;
-		int simulationIndex = 1;
+		int simulationIndex = 10;
 
 		BinomialModelUser tester = new BinomialModelUser(initialValue, increaseIfUp, decreaseIfDown, interestRate, seed,
 				lastTime, numberOfSimulations);

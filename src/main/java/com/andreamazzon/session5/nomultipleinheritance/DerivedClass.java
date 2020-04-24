@@ -12,4 +12,7 @@ public class DerivedClass extends FirstParentClass {
 		System.out.println("A method of the base derived class");
 	}
 
+	void printI() {
+		System.out.println(i);
+	}
 }

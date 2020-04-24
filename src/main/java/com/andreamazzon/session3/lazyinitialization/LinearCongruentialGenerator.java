@@ -51,6 +51,7 @@ public class LinearCongruentialGenerator {
 		randomNumbers[0] = seed; // the first entry is the seed: first number of the sequence
 		for (int indexOfInteger = 0; indexOfInteger < numberOfPseudoRandomNumbers; indexOfInteger++) {
 			long congruence = ((a * randomNumbers[indexOfInteger] + c) % modulus);
+			//congruence > -modulus
 			if (congruence < 0) {
 				congruence += modulus;//otherwise we would get a negative number, because of possible overflows
 			}

@@ -9,6 +9,7 @@ import static com.andreamazzon.session3.useful.Print.printn;
  */
 
 public abstract class AbstractBaseClass {
+
 	abstract void abstractMethod();
 
 	void nonAbstractMethod() {

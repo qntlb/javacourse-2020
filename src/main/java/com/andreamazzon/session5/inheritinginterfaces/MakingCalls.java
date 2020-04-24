@@ -48,9 +48,15 @@ public class MakingCalls {
 	public static void main(String[] args) {
 		InheritingAndImplementingClass last = new InheritingAndImplementingClass();
 		//note how last gets implicitly upcasted everytime
+		ClassImplmentingFirstInterface firstInterfaceObject = new ClassImplmentingFirstInterface();
 		caller1(last);
 		caller2(last);
 		caller3(last);
 		caller4(last);
+
+		caller1(firstInterfaceObject);
+		//caller2(firstInterfaceObject);FAIL!
+		//caller3(firstInterfaceObject);FAIL!
+
 	}
 }
