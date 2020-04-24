@@ -19,6 +19,7 @@ public class NameClashes implements AnInterface, AnotherInterface{
 	};
 
 	//you can of course overload the method
+	@Override
 	public void overloadedMethod() {
 		System.out.println("This is the other implementation");
 	};
