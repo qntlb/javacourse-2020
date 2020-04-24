@@ -11,4 +11,8 @@ public class Fish implements AnimalThatSwims {
 	public void swim() {//methods defined in the interface have to be public!
 		System.out.println("a fish swims");
 	}
+	@Override
+	public void sameMethod() {//methods defined in the interface have to be public!
+		System.out.println("implementation");
+	}
 }

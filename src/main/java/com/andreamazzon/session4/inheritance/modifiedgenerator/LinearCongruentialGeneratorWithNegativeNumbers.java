@@ -14,7 +14,7 @@ import com.andreamazzon.session3.lazyinitialization.LinearCongruentialGenerator;
  */
 public class LinearCongruentialGeneratorWithNegativeNumbers extends LinearCongruentialGenerator {
 
-	int flag = 0;//it gets 1 the first time we subtract modulus from the generated numbers
+	private int flag = 0;//it gets 1 the first time we subtract modulus from the generated numbers
 
 	//the constructor is just the one of the parent class
 	public LinearCongruentialGeneratorWithNegativeNumbers(int numberOfPseudoRandomNumbers, long seed) {

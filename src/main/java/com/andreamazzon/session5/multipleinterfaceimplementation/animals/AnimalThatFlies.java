@@ -7,5 +7,7 @@ package com.andreamazzon.session5.multipleinterfaceimplementation.animals;
  *
  */
 interface AnimalThatFlies {
-	public void fly();
+	void fly();
+	void sameMethod();
+	int sameField = 10;
 }

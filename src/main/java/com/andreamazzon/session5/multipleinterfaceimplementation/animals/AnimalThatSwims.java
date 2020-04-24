@@ -8,5 +8,7 @@ package com.andreamazzon.session5.multipleinterfaceimplementation.animals;
  */
 public interface AnimalThatSwims {
 	public void swim();
+	void sameMethod();
+	int sameField = 11;
 }
 

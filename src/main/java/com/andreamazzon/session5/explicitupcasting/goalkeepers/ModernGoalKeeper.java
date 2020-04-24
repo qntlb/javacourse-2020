@@ -11,8 +11,9 @@ package com.andreamazzon.session5.explicitupcasting.goalkeepers;
  */
 public class ModernGoalKeeper extends GoalKeeper {
 
-	//int marketValue = 50;// Try to uncomment it, comment the assignment in the constructor and see what happens in case of upcasting
+	int marketValue = 50;// Try to uncomment it, comment the assignment in the constructor and see what happens in case of upcasting
 
+	int specificField = 1;
 
 	ModernGoalKeeper() { //it automatically calls also the constructor of the base class
 		System.out.println("But I have also to play the ball");
@@ -20,7 +21,7 @@ public class ModernGoalKeeper extends GoalKeeper {
 		 * higher value. marketValue could be changed even if ModernGoalKeeper was defined outside the
 		 * package of GoalKeeper, because it is protected.
 		 */
-		marketValue = 50;//will be the same for the upcasted one: the constructor of the derived class is called
+		//marketValue = 50;//will be the same for the upcasted one: the constructor of the derived class is called
 	}
 
 	@Override

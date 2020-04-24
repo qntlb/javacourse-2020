@@ -8,6 +8,8 @@ package com.andreamazzon.session5.nomultipleinheritance;
  */
 public class FirstParentClass {
 
+	int i = 1;
+
 	void foo() {
 		System.out.println("Implementation of the first class");
 	}

@@ -11,4 +11,8 @@ public class Eagle implements AnimalThatFlies {
 	public void fly() {//methods defined in the interface have to be public!
 		System.out.println("an eagle flies");
 	}
+	@Override
+	public void sameMethod() {//methods defined in the interface have to be public!
+		System.out.println("implementation");
+	}
 }

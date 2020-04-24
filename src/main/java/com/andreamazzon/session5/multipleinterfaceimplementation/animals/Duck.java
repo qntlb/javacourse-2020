@@ -19,4 +19,10 @@ public class Duck implements AnimalThatSwims, AnimalThatFlies {
 	public void fly() {//methods defined in the interface have to be public!
 		System.out.println("a duck flies");
 	}
+
+	@Override
+	public void sameMethod() {//methods defined in the interface have to be public!
+		System.out.println("implementation");
+		//System.out.println(sameField);//POSSIBLE CONFLICT!
+	}
 }

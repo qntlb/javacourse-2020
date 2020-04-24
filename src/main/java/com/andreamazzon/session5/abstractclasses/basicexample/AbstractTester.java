@@ -11,7 +11,7 @@ package com.andreamazzon.session5.abstractclasses.basicexample;
 public class AbstractTester {
 	public static void main(String[] args) {
 		// it is not possible to create objects of AbstractBaseClass! They would not be able to call abstractMethod().
-		// AbstractBaseClass abstractBase = new AbstractBaseClass();
+		//AbstractBaseClass abstractBase = new AbstractBaseClass();
 		DerivedClassFromAbstract objectOfDerivedClasses = new DerivedClassFromAbstract(); // the constructor of the base class is called!
 		OtherClass.callMethod(objectOfDerivedClasses); // upcasting
 		objectOfDerivedClasses.nonAbstractMethod(); //directly inherited

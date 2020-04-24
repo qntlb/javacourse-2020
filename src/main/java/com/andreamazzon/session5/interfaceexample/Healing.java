@@ -10,6 +10,7 @@ package com.andreamazzon.session5.interfaceexample;
  *
  */
 public class Healing {
+
 	public static void magicHealing(Cure c) {//object of any class implementing Cure
 		c.diagnose();//the right implementation of the method is called at running time
 		//c.aDoctorMethod();//it is not a method common to every class implementing Cure
@@ -22,9 +23,10 @@ public class Healing {
 
 	public static void main(String[] args) {
 		Antivirus mcAfee = new Antivirus();
-		Doctor doctorHouse = new Doctor();
-		magicHealing(doctorHouse);//upcasting
+		Cure doctorHouse = new Doctor();//explicit upcasting
+		magicHealing(doctorHouse);
 		magicHealing(mcAfee);//upcasting
-		doctorHouse.aDoctorMethod();
+		((Doctor) doctorHouse).aDoctorMethod();//downcasting
+		//doctorHouse.aDoctorMethod();
 	}
 }

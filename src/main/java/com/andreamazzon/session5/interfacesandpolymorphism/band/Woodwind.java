@@ -1,5 +1,9 @@
 package com.andreamazzon.session5.interfacesandpolymorphism.band;
 
+/*
+ * you could avoid to give the implementation of the method, as it inherits from Wind.
+ * Here you are overriding the implementation of Wind
+ */
 class Woodwind extends Wind {
 	/**
 	 * It prints "Woodwind plays" plus the name f the Note given as argument.

@@ -8,7 +8,10 @@ package com.andreamazzon.session5.enumtype.currencies;
  */
 public class CurrencyTester {
 	public static void main(String[] args) {
+		//System.out.println(Currency.EURO.ordinal());
+
 		DescribeCurrency currencyDescribe = new DescribeCurrency();
+
 		/*
 		 * you refer to a value of an enum type like to a static field of a class:
 		 * NameOfTheEnumType.NAMEOFTHEVALUE

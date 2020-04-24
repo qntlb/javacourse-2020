@@ -64,7 +64,7 @@ public class BinomialModelSimulator
 	 */
 	private long convert() {
 		//modulus is private, but we have the getter
-		return Math.round(riskNeutralProbabilityUp * randomGenerator.getModulus());
+		return Math.round(riskNeutralProbabilityUp * (randomGenerator.getModulus()-1));
 	}
 
 	//random number = 0,1,2,.....,modulus-1
@@ -74,7 +74,7 @@ public class BinomialModelSimulator
 	 *  S(i+1) = S(i)*M(i)
 	 */
 	//upsAndDowns[i][j]=M(i,omega(j))
-	private double[][] generateUpsAndDowns() {
+	private void generateUpsAndDowns() {
 		//rows are simulation at given time, columns paths
 		upsAndDowns = new double[lastTime][numberOfSimulations];
 		long threshold = convert();//if the simulated number is less than this, we have up
@@ -90,7 +90,6 @@ public class BinomialModelSimulator
 				}
 			}
 		}
-		return upsAndDowns;
 	}
 
 	//the generation of S, depending on the one of the process M of ups and downs
@@ -107,6 +106,7 @@ public class BinomialModelSimulator
 			for (int simulationIndex = 0; simulationIndex < numberOfSimulations; simulationIndex ++) {
 				realizations[timeIndex][simulationIndex] =
 						realizations[timeIndex - 1][simulationIndex] * upsAndDowns[timeIndex - 1][simulationIndex];
+				//S(i+1)=S(i)M(I)
 			}
 		}
 	}

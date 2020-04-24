@@ -9,6 +9,8 @@ package com.andreamazzon.session5.nomultipleinheritance;
  */
 public class SecondParentClass {
 
+	int i = 3;
+
 	void foo() {
 		System.out.println("Implmentation of the second class");
 	}

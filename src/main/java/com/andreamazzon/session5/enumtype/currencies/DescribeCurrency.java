@@ -11,6 +11,7 @@ public class DescribeCurrency {
 
 	//private: we access its value with the getter and the setter
 	private Currency describedCurrency;	//a field of type Currency: enum
+	//private Currency describedCurrency = Currency.EURO;	//a field of type Currency: enum
 
 	public void describe() {
 		//a switch is intended to select from a limited set of possibilities: ideal match for enum
@@ -19,7 +20,7 @@ public class DescribeCurrency {
 			System.out.println(getDescribedCurrency().ordinal() + 1 + " " + getDescribedCurrency() + ": is the currency of the EU");
 			break;
 		case DOLLAR:
-			System.out.println(getDescribedCurrency().ordinal() + 1 + " " + getDescribedCurrency() + ": is the reference country in the world ");
+			System.out.println(getDescribedCurrency().ordinal() + 1 + " " + getDescribedCurrency() + ": is the reference currency in the world ");
 			break;
 		case POUND:
 			System.out.println(getDescribedCurrency().ordinal() + 1 + " " + getDescribedCurrency() + ": went down just after the Brexit");
