@@ -1,4 +1,4 @@
-package com.session6.andreamazzon.innerouteracess;
+package com.andreamazzon.session6.innerouteracess;
 
 
 public class InnerOuterTesting {
