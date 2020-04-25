@@ -8,8 +8,7 @@ import java.util.ArrayList;
  * is zero, you get an exception. Otherwise,  you get the result and divide it by Divisor and so on,
  * until you reach a number smaller then minResult (and you get an underFlowException) or bigger then
  * maxResult (and you get an overFlowException).
- * Here you can also see an example of generics: with ArrayList you can create an array without fixing
- * its length (you avoid possible exceptions).
+ * Note: with ArrayList you can create an array without fixing its length (you avoid possible exceptions).
  *
  * @author Andrea Mazzon
  *
@@ -22,7 +21,7 @@ public class Divider {
 		if (divisor == 0) {
 			throw new DivideByZeroException();
 		}
-		//an array of Doubles: it does not work with primitive types
+		//an array of Doubles: it does not work with primitive types. ArrayList works with generics!
 		ArrayList<Double> dividends = new ArrayList<Double>();
 		//add method of ArrayList: it insert an object of the type specified at the end of the array
 		dividends.add(firstDividend);

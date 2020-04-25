@@ -2,9 +2,8 @@ package com.andreamazzon.session6.privateinnerclasses.sequence;
 
 
 /**
- * This class contains a main method which illustrates how objects
- * of the inner class are created from objects of he outer class.
- * Moreover, it calls the methods implemented in the inner class.
+ * This class contains a main method which illustrates how objects of the inner class are created from objects of
+ * the outer class. Moreover, it calls the methods implemented in the inner class.
  *
  * @author Andrea Mazzon
  *

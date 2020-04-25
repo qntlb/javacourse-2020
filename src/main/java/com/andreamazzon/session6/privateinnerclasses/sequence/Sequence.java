@@ -1,8 +1,7 @@
 package com.andreamazzon.session6.privateinnerclasses.sequence;
 
 /**
- * public access class which has two private fields. These are accessed by its
- * inner classes!
+ * This is a public access class which has two private fields. These are accessed by its inner classes
  *
  * @author Andrea Mazzon
  *

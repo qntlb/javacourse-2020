@@ -1,10 +1,8 @@
 package com.andreamazzon.session6.nestedclasses;
 
-
 /**
- * Example of a class with a nested (= static inner) class: you construct a nested
- * class when you don't need a connection between the inner-class object and the
- * outer-class object.
+ * Example of a class with a nested (= static inner) class: you construct a nested class when you don't
+ * need a connection between the inner-class object and the outer-class object.
  * A nested class cannot access the non static fields of the outer class.
  *
  * @author Andrea Mazzon
@@ -15,6 +13,8 @@ class Outer {
 	private int nonStaticOuterField = 3;
 
 	public static class StaticInner {
+		private static int staticInnerField = 9;//not permitted for non static inner classes
+
 		StaticInner() {
 			System.out.println("I am a static Inner!");
 		}

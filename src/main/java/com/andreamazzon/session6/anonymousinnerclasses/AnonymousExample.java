@@ -1,8 +1,7 @@
 package com.andreamazzon.session6.anonymousinnerclasses;
 
 /**
- * This class has a main method that shows how anonymous inner classes
- * work.
+ * This class has a main method that shows how anonymous inner classes work.
  *
  * @author Andrea Mazzon
  *

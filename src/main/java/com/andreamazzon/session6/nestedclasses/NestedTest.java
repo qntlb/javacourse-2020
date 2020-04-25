@@ -8,7 +8,7 @@ public class NestedTest {
 		 *  that now you don't need an object of the outer class.
 		 */
 		Outer.StaticInner staticInner = new Outer.StaticInner();
-
+		//call of the method as always
 		int outerData = staticInner.getOuterStaticData();
 		System.out.println(outerData);
 	}
