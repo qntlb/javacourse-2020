@@ -9,14 +9,14 @@ package com.andreamazzon.session6.generics.containers;
  */
 class ObjectTypeClass {
 
-	private Object genericField; // T is the "type parameter"
+	private Object whateverTypeField;
 
 	//polymorphism at its maximum! You can give whatever object as an argument
-	public void setA(Object a) {
-		this.genericField = a;
+	public void setField(Object a) {
+		this.whateverTypeField = a;
 	}
-	public Object getA() {
-		return genericField;
+	public Object getField() {
+		return whateverTypeField;
 	}
 }
 
