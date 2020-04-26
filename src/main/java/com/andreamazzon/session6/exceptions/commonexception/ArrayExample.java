@@ -1,8 +1,9 @@
 package com.andreamazzon.session6.exceptions.commonexception;
 
 /**
- * Very easy example of exception, directly given by Java, for an array
- * out of bounds. Note that the error is not handled at compilation time.
+ * Very easy example of exception, automatically thrown by Java, for an array out of bounds. Like other
+ * exceptions thrown by Java, you don’t need to include it in your exception specifications. Note that the
+ * error is not handled at compilation time.
  */
 public class ArrayExample {
 
