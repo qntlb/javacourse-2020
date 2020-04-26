@@ -1,4 +1,4 @@
-package com.andreamazzon.session6.exceptions.arraylist;
+package com.andreamazzon.session6.exceptions.divisions;
 
 //Exception is a class, when you write an Exception you extend it
 @SuppressWarnings("serial")

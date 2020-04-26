@@ -10,4 +10,4 @@
  * use when calling a method that can throw one or more exceptions.
  *
  */
-package com.andreamazzon.session6.exceptions.arraylist;
+package com.andreamazzon.session6.exceptions.divisions;

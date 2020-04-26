@@ -1,4 +1,4 @@
-package com.andreamazzon.session6.exceptions.arraylist;
+package com.andreamazzon.session6.exceptions.divisions;
 
 public class ExceptionChecker {
 

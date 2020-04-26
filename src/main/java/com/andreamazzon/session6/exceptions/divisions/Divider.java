@@ -1,4 +1,4 @@
-package com.andreamazzon.session6.exceptions.arraylist;
+package com.andreamazzon.session6.exceptions.divisions;
 
 import java.util.ArrayList;
 
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class Divider {
 
 	static void divide(double firstDividend, double divisor, double minResult, double maxResult)
-	//you have to specify the exception than can be thrown
+	//you have to specify the exception than can be thrown: part of method declaration
 			throws UnderFlowException, OverFlowException, DivideByZeroException {
 		if (divisor == 0) {
 			throw new DivideByZeroException();
