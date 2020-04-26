@@ -1,7 +1,8 @@
 package com.andreamazzon.session6.innerclasses.privateinnerclasses;
 
 /**
- * This is a public access class which has two private fields. These are accessed by its inner classes
+ * This is a public access class which has two private fields. These are accessed by its private
+ * inner classes. A reference to the private inner class is returned by the getSequenceSelector() method.
  *
  * @author Andrea Mazzon
  *
@@ -25,10 +26,11 @@ public class Sequence {
 		}
 	}
 
-	/**
-	 * Inner class implementing the interface Selector: note that it can access
-	 * fields and methods of the enclosing class (even if they are private!) as if
-	 * it owned them: useful feature of inner classes.
+
+	/*
+	 * This is an inner class implementing the interface Selector: note that it can access fields and
+	 * methods of the enclosing class (even if they are private!) as if it owned them: useful feature of
+	 * inner classes.
 	 *
 	 * @author Andrea Mazzon
 	 *
