@@ -7,7 +7,7 @@ package com.andreamazzon.session6.generics.containers;
  *
  * @author Andrea Mazzon
  */
-class GenericClass<T> {
+public class GenericClass<T> {
 	/*
 	 * Of course we could specify T to be object and remove the parametrization,
 	 * but this would mean that DIFFERENT types could be used in any call of a
@@ -17,11 +17,11 @@ class GenericClass<T> {
 	 */
 	private T genericField; // T is the "type parameter"
 
-	public void setA(T a) {//generic constructor
+	public void setField(T a) {//generic constructor
 		this.genericField = a;
 	}
 
-	public T getA() {//generic getter
+	public T getField() {//generic getter
 		return genericField;
 	}
 }
