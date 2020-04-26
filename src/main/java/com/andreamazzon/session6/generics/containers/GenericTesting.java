@@ -15,28 +15,32 @@ public class GenericTesting {
 
 
 		/*
-		 * look at ObjectTypeClass: the field A of the same object can be set first to be a double
-		 * and then a ComplexNumber. Sometimes you want to prevent this.
+		 * look at ObjectTypeClass: the field whateverTypeField of the same object can be set first to be
+		 * a double and then a ComplexNumber. Sometimes you want to prevent this.
 		 */
 		ObjectTypeClass anObjectType = new ObjectTypeClass();
-		anObjectType.setA(10.0);
-		anObjectType.setA(new ComplexNumber(2,3));
+		anObjectType.setField(10.0);
+		anObjectType.setField(new ComplexNumber(2,3));
 
 		//THEN YOU USE GENERICS:
 
-		//you specify Double in angle brackets, and then you call the constructor of GenericClass
+		/*
+		 * you specify Double in angle brackets, and then you call the constructor of GenericClass.
+		 * Note: Double (like Float, Integer, Long, Character, Boolean) is a wrapper class: it wraps
+		 * the primitive type double into an object on the heap. It also provides some methods and fields
+		 * (think for example at Integer.MAX_VALUE). Generics only accept wrapper classes.
+		 */
 		GenericClass<Double> aDoubleContainer = new GenericClass<Double>();
-		//You cannot use primitives as generic types in Java! Has to be Double, the wrapper class
-		aDoubleContainer.setA(10.0);//aDoubleContainer is a container of Doubles.
-		Double x = aDoubleContainer.getA();
+		aDoubleContainer.setField(10.0);//aDoubleContainer is a container of Doubles.
+		Double x = aDoubleContainer.getField();
 		System.out.println("Double type instantiation of the generic class. Field returns: "+ x);
-		aDoubleContainer.setA(9.0);
+		aDoubleContainer.setField(9.0);
 		//aDouble.setA("char"); //you cannot set A to be of another type!
 
 		//you specify ComplexNumber in angle brackets, and then you call the constructor of GenericClass
 		GenericClass<ComplexNumber> aComplexContainer = new GenericClass<ComplexNumber>();
-		aComplexContainer.setA(new ComplexNumber(2,3));//you set A to be a complex number
-		ComplexNumber aComplex = aComplexContainer.getA();//you get this complex number
+		aComplexContainer.setField(new ComplexNumber(2,3));//you set A to be a complex number
+		ComplexNumber aComplex = aComplexContainer.getField();//you get this complex number
 		System.out.println("Real part: "+ aComplex.getRealPart());
 		System.out.println("Imaginary part: "+ aComplex.getImaginaryPart());
 
