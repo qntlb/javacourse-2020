@@ -1,7 +1,7 @@
 package com.andreamazzon.session6.generics.fibonacci;
 
 /**
- * This class has a main method when we generate the first n numbers of the Fibonacci sequence
+ * This class has a main method when we generate the first n numbers of the Fibonacci sequence.
  *
  * @author Andrea Mazzon
  *
