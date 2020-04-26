@@ -3,7 +3,7 @@ package com.andreamazzon.session6.generics.fibonacci;
 import com.andreamazzon.session6.generics.genericinterfaces.GenericPointer;
 
 /**
- * This class implements the generic interface GenericPointer, for type Integer. It is the used to compute
+ * This class implements the generic interface GenericPointer, for type Integer. It is the used to return
  * the first numbers of a Fibonacci sequence.
  *
  * @author Andrea Mazzon
@@ -20,11 +20,8 @@ public class FibonacciSequence implements GenericPointer<Integer> {//I give the 
 		return fib(count++);
 	}
 
-	/**
 
-	 * @param n
-	 * @return the Fibonacci number F_n=F_{n-1}+F_{n-2}, if n>2.
-	 */
+	//it computes and return the Fibonacci number F_n=F_{n-1}+F_{n-2}, if n>2, or 1 when n<= 2
 	private int fib(int n) {
 		if (n < 3) {
 			return 1;
