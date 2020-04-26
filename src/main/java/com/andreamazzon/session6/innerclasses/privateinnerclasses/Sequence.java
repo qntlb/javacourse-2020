@@ -17,7 +17,8 @@ public class Sequence {
 	}
 
 	/**
-	 * It appends an int to the end of a sequence, if there is room left
+	 * It appends an int to the end of a sequence, if there is room left. We use it to fill the array
+	 * at the beginning.
 	 * @param n int to add
 	 */
 	public void append(int n) {
