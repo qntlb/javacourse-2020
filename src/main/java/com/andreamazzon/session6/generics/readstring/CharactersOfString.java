@@ -18,7 +18,7 @@ public class CharactersOfString implements GenericPointer<Character>{//I give th
 
 	public CharactersOfString(String string) {
 		this.string = string;
-		lengthOfTheString = string.length();
+		lengthOfTheString = string.length();//method of String
 	}
 
 	/**
