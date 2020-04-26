@@ -4,4 +4,4 @@
  * is returned by the method  getSequenceSelector() of Sequence. In this way, the user only sees
  * the methods of Selector implemented by SequenceSelector, and not the class itself (since it is private)
  */
-package com.andreamazzon.session6.privateinnerclasses.sequence;
+package com.andreamazzon.session6.innerclasses.privateinnerclasses;

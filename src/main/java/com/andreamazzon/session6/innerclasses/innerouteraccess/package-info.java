@@ -8,4 +8,4 @@
  * class, and the compiler will complain if it cannot access that reference. Then when you refer to a member
  * of the enclosing class, that (hidden) reference is used to select that member.
  */
-package com.andreamazzon.session6.innerouteraccess;
+package com.andreamazzon.session6.innerclasses.innerouteraccess;

@@ -1,4 +1,4 @@
-package com.andreamazzon.session6.privateinnerclasses.sequence;
+package com.andreamazzon.session6.innerclasses.privateinnerclasses;
 
 /**
  * This is a public access class which has two private fields. These are accessed by its inner classes

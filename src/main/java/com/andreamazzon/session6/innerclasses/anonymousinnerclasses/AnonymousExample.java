@@ -1,4 +1,4 @@
-package com.andreamazzon.session6.anonymousinnerclasses;
+package com.andreamazzon.session6.innerclasses.anonymousinnerclasses;
 
 /**
  * This class has a main method that shows how anonymous inner classes work.

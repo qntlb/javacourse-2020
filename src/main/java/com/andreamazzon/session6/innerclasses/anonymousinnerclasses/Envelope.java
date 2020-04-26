@@ -1,4 +1,4 @@
-package com.andreamazzon.session6.anonymousinnerclasses;
+package com.andreamazzon.session6.innerclasses.anonymousinnerclasses;
 
 /**
  * This class does not implement the interface Letter, but it has an anonymous inner class doing it.

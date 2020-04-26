@@ -1,4 +1,4 @@
-package com.andreamazzon.session6.innerouteraccess;
+package com.andreamazzon.session6.innerclasses.innerouteraccess;
 
 /**
  * This class contains a private int field, which is accessed by its inner class. The inner class has also

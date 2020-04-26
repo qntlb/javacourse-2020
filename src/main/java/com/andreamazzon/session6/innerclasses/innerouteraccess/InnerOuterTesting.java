@@ -1,4 +1,4 @@
-package com.andreamazzon.session6.innerouteraccess;
+package com.andreamazzon.session6.innerclasses.innerouteraccess;
 
 /**
  * This class illustrates some syntax about inner classes. In particular, we see how objects of the inner

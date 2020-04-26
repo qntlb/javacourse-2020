@@ -1,4 +1,4 @@
-package com.andreamazzon.session6.privateinnerclasses.sequence;
+package com.andreamazzon.session6.innerclasses.privateinnerclasses;
 
 
 /**

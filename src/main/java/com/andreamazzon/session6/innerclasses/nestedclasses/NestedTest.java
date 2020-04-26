@@ -1,4 +1,4 @@
-package com.andreamazzon.session6.nestedclasses;
+package com.andreamazzon.session6.innerclasses.nestedclasses;
 
 public class NestedTest {
 

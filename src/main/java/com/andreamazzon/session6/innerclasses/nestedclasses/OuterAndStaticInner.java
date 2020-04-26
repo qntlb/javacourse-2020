@@ -1,4 +1,4 @@
-package com.andreamazzon.session6.nestedclasses;
+package com.andreamazzon.session6.innerclasses.nestedclasses;
 
 /**
  * Example of a class with a nested (= static inner) class: you construct a nested class when you don't

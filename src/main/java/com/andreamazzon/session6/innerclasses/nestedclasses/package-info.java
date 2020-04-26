@@ -8,4 +8,4 @@
  * unless static fields are also final, since they depend on the object of the outer class, but nested
  * classes can have all of these.
  */
-package com.andreamazzon.session6.nestedclasses;
+package com.andreamazzon.session6.innerclasses.nestedclasses;
