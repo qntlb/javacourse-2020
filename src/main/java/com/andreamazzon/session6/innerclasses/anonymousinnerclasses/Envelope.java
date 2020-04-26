@@ -14,9 +14,9 @@ public class Envelope {
 
 	/*
 	 * anonymous inner class! Here you say that Envelope has an inner class which implements Letter
-	 * (as you see from Letter before the name of the object), and that you create an object of this
-	 * class (look at the -a bit odd-syntax Letter(): it's the constructor of the anonymous class which
-	 * implements Letter).
+	 * (as you see from Letter before the name of the object: you directly upcast the object created here),
+	 * and that you create an object of this class (look at the -a bit odd-syntax Letter(): it's the constructor
+	 * of the anonymous class which implements Letter).
 	 */
 	Letter letter = new Letter() {
 		/*
