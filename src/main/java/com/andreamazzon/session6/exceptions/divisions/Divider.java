@@ -4,11 +4,12 @@ import java.util.ArrayList;
 
 /**
  * This class has a static void Divide method which serves as an example of how exceptions are
- * handled and thrown: you start by dividing a double firstDividend by a double Divisor. If Divisor
- * is zero, you get an exception. Otherwise,  you get the result and divide it by Divisor and so on,
+ * handled and thrown: you start by dividing a double firstDividend by a double divisor. If divisor
+ * is zero, you get an exception. Otherwise,  you get the result and divide it by divisor and so on,
  * until you reach a number smaller then minResult (and you get an underFlowException) or bigger then
  * maxResult (and you get an overFlowException).
  * Note: with ArrayList you can create an array without fixing its length (you avoid possible exceptions).
+ * ArrayList is a generic class.
  *
  * @author Andrea Mazzon
  *
@@ -19,7 +20,7 @@ public class Divider {
 	//you have to specify the exception than can be thrown: part of method declaration
 			throws UnderFlowException, OverFlowException, DivideByZeroException {
 		if (divisor == 0) {
-			throw new DivideByZeroException();
+			throw new DivideByZeroException();//you create a new object of type DivideByZeroException
 		}
 		//an array of Doubles: it does not work with primitive types. ArrayList works with generics!
 		ArrayList<Double> dividends = new ArrayList<Double>();
@@ -29,15 +30,15 @@ public class Divider {
 		while (true) {//a way to say that it continues indefinitely (true always true)
 			//get(i) gets the element of the array in position i (always remember: starting from 0!)
 			Double result = (dividends.get(i))/divisor; //you divide the previous number
-			dividends.add(result); //you insert the result in your array
+			dividends.add(result); //you insert the result in your array, in the last position (i.e., i+1)
 			System.out.println(result);
 
 			if (result < minResult) { //underFlow!
-				throw new UnderFlowException();
+				throw new UnderFlowException();//you create a new object of type UnderFlowException
 			}
 
 			if (result > maxResult) {//overFlow!
-				throw new OverFlowException();
+				throw new OverFlowException();//you create a new object of type OverFlowException
 			}
 			i++;
 		}
