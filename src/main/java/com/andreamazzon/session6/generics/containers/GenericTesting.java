@@ -35,7 +35,7 @@ public class GenericTesting {
 		Double x = aDoubleContainer.getField();
 		System.out.println("Double type instantiation of the generic class. Field returns: "+ x);
 		aDoubleContainer.setField(9.0);
-		//aDouble.setA("char"); //you cannot set A to be of another type!
+		//aDoubleContainer.setA("char"); //you cannot set A to be of another type!
 
 		//you specify ComplexNumber in angle brackets, and then you call the constructor of GenericClass
 		GenericClass<ComplexNumber> aComplexContainer = new GenericClass<ComplexNumber>();
