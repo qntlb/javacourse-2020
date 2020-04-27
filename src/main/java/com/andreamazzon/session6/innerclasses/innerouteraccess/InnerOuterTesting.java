@@ -7,6 +7,7 @@ package com.andreamazzon.session6.innerclasses.innerouteraccess;
  * @author Andrea Mazzon
  *
  */
+
 public class InnerOuterTesting {
 	public static void main(String[] args) {
 		Outer outer = new Outer();//object of the outer class
