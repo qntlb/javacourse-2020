@@ -20,12 +20,12 @@ public class UserTester {
 		int seed = 1897;
 		int lastTime = 10;
 		int numberOfSimulations = 1000000;
-		int simulationIndex = 1;
+		int simulationIndex = 19;
 
 		BinomialModelUser binomialTester = new BinomialModelUser(initialValue, increaseIfUp, decreaseIfDown, interestRate, seed,
 				lastTime, numberOfSimulations);
 
-		System.out.println("Path for simulation " + simulationIndex + ":");
+		System.out.println("Path for simulation " + simulationIndex + " for the binomial model:");
 		binomialTester.printPath(simulationIndex);
 
 		double finalAverageBinomial = binomialTester.getAverageAtGiveTime(lastTime);
@@ -37,7 +37,7 @@ public class UserTester {
 				new TrinomialModelUser(initialValue, increaseIfUp, decreaseIfDown, interestRate, probabilityStayTheSame, seed,
 						lastTime, numberOfSimulations);
 
-		System.out.println("Path for simulation " + simulationIndex + ":");
+		System.out.println("Path for simulation " + simulationIndex + " for the trinomial model:");
 		trinomialTester.printPath(simulationIndex);
 
 		double finalAverageTrinomial = trinomialTester.getAverageAtGiveTime(lastTime);
