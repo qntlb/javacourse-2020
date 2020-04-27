@@ -23,6 +23,7 @@ public abstract class StochasticProcessSimulator implements StochasticProcessSim
 	 */
 	protected double[][] realizations;
 
+	protected double initialValue; //S(0)
 	protected int numberOfSimulations; //number of simulated values at every time
 	protected int lastTime;
 
