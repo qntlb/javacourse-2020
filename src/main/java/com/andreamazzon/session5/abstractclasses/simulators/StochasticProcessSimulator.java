@@ -15,7 +15,7 @@ package com.andreamazzon.session5.abstractclasses.simulators;
  * @author AndreaMazzon
  *
  */
-public abstract class StochasticProcessSimulator
+public abstract class StochasticProcessSimulator implements StochasticProcessSimulatorInterface
 {
 	/*
 	 * the matrix of realizations of S. It is protected, so it can be initialized by the specific implementation
@@ -33,6 +33,7 @@ public abstract class StochasticProcessSimulator
 	 *
 	 * @return the matrix of the realization of the process S
 	 */
+	@Override
 	public double[][] getRealizations() {
 		//lazy initialization: realizations are generated only when needed, i.e., when we want to get them
 		if (realizations == null) {//moreover, we generate them only once
