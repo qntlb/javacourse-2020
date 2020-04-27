@@ -10,10 +10,10 @@ package com.andreamazzon.session6.exceptions.divisions;
 public class ExceptionChecker {
 
 	public static void main(String[] args) {
-		double maxValue = 1000000000;
-		double minValue = 0.000000001;
+		double maxValue = Integer.MAX_VALUE;
+		double minValue = 0;
 		double firstDividend = 1;
-		double divisor = 0.1;
+		double divisor = 100;
 		//Divider.divide(firstDividend, divisor, minValue, maxValue);//you cannot call it in this way, because of possible exceptions
 
 		//the code by which exceptions can derive is surrounded by brackets, after "try"
