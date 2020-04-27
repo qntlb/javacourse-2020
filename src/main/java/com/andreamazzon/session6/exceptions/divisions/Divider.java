@@ -30,16 +30,18 @@ public class Divider {
 		while (true) {//a way to say that it continues indefinitely (true always true)
 			//get(i) gets the element of the array in position i (always remember: starting from 0!)
 			Double result = (dividends.get(i))/divisor; //you divide the previous number
-			dividends.add(result); //you insert the result in your array, in the last position (i.e., i+1)
-			System.out.println(result);
 
-			if (result < minResult) { //underFlow!
+			if (result <= minResult) { //underFlow!
 				throw new UnderFlowException();//you create a new object of type UnderFlowException
 			}
 
-			if (result > maxResult) {//overFlow!
+			if (result >= maxResult) {//overFlow!
 				throw new OverFlowException();//you create a new object of type OverFlowException
 			}
+
+			dividends.add(result); //you insert the result in your array, in the last position (i.e., i+1)
+			System.out.println(result);
+
 			i++;
 		}
 	}
