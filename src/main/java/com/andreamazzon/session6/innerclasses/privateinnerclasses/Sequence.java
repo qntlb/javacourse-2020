@@ -63,6 +63,7 @@ public class Sequence {
 			}
 		}
 	}
+	//note that the return type is Selector: upcasting!
 	public Selector getSequenceSelector() {
 		return new SequenceSelector();
 	}
