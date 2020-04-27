@@ -29,9 +29,20 @@ public class Outer {
 	public class Inner {
 
 		private int innerField = 8;//its own private field
+
+		/*
+		 * it has methods that depend on the specific value of a field of the outer class: it makes sense
+		 * that an object of this inner class needs a reference to the object of the outer class that
+		 * created it.
+		 */
 		public int returnOuterField() {
 			return outerField; //it simply accesses it
 		}
+
+		public int sumOuterInner() {
+			return outerField + innerField;
+		}
+
 	}
 
 }
