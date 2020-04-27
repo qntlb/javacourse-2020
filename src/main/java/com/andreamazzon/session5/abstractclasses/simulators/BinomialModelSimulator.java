@@ -24,7 +24,7 @@ import com.andreamazzon.session3.lazyinitialization.LinearCongruentialGenerator;
 //S[i][j]=S(i,omega(j))
 public class BinomialModelSimulator extends StochasticProcessSimulator
 {
-	private double initialValue; //S(0)
+
 	private double increaseIfUp; //this is u>1
 	private double decreaseIfDown; //this is d<1
 	private double riskNeutralProbabilityUp; //will be equal to (1 + interestRate - decreaseIfDown)/(increaseIfUp - decreaseIfDown)

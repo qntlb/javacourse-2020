@@ -7,7 +7,7 @@ import com.andreamazzon.session3.lazyinitialization.LinearCongruentialGenerator;
  * process S, such that every time i we have
  * S(i+1)=S(i)*M(i),
  * where M(i)=u>1 with probability p_1, M(i) = 1 with probability p_2, M(i)=d<1 with probability 1-p_1-p_2.
- * This is done under A risk neutral measure: it can be seen that the market is not complete, i.e.,
+ * This is done under a risk neutral measure: it can be seen that the market is not complete, i.e.,
  * infinitely many risk neutral measures exist, with condition
  * p_1 = (1 + r - d - p_2 * (1 - d)) / (u - d)
  * where r is the risk free interest rate.
