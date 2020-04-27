@@ -26,7 +26,7 @@ public class Outer {
 	 * @author Andrea Mazzon
 	 *
 	 */
-	class Inner {
+	public class Inner {
 
 		private int innerField = 8;//its own private field
 		public int returnOuterField() {
