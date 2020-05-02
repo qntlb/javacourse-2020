@@ -18,8 +18,6 @@ import com.andreamazzon.session3.lazyinitialization.LinearCongruentialGenerator;
  * in the Finmath library.
  *
  */
-
-
 //S[i][j]=S(i,omega(j))
 public class BinomialModelSimulator
 {
@@ -111,10 +109,9 @@ public class BinomialModelSimulator
 		}
 	}
 
-
 	/**
 	 *
-	 * @return the matrix of the realization of the process S
+	 * @return the matrix of the realizations of the process S
 	 */
 	public double[][] getRealizations() {
 		//lazy initialization: realizations are generated only when needed, i.e., when we want to get them
