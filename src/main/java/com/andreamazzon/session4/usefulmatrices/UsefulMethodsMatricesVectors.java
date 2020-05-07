@@ -79,7 +79,7 @@ public class UsefulMethodsMatricesVectors {
 
 	/**
 	 * It returns the biggest element of a one-dimensional array of doubles
-	 * 
+	 *
 	 * @param vector the one-dimensional array
 	 * @return the biggest element of the one-dimensional array
 	 */
@@ -95,7 +95,7 @@ public class UsefulMethodsMatricesVectors {
 
 	/**
 	 * It returns the biggest element of a one-dimensional array of doubles
-	 * 
+	 *
 	 * @param vector the one-dimensional array
 	 * @return the biggest element of the one-dimensional array
 	 */
@@ -114,7 +114,7 @@ public class UsefulMethodsMatricesVectors {
 	 * a given array that lie in every subinterval (bin) of an interval [minBin,
 	 * maxBin]. All the subintervals are of equal length. The first entry of the
 	 * integer array represent the number of realizations strictly smaller then
-	 * minBin, the last one the number of realizations bigger or equal then maxBin.
+	 * minBin, the last one the number of realizations bigger than maxBin.
 	 *
 	 * @param realisations
 	 * @param minBin
@@ -131,13 +131,13 @@ public class UsefulMethodsMatricesVectors {
 			} else if (realization > maxBin) {
 				bins[binsNumber + 1] += 1; // it goes in the last bin
 			} else {
-				int bin = (int) ((realization - minBin) / binSize);
+				int intRatio = (int) ((realization - minBin) / binSize);
 				/*
 				 * bin[i+1] (remember: in Java the first entry is 0, and here bin[0] hosts the
 				 * realization smaller than min) hosts the realization such that (realization -
 				 * minBin) / binSize is in [i,i+1)
 				 */
-				bins[bin + 1] += 1;
+				bins[intRatio + 1] += 1;
 			}
 		}
 		return bins;
