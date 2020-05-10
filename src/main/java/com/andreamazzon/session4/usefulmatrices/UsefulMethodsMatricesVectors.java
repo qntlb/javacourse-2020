@@ -67,6 +67,21 @@ public class UsefulMethodsMatricesVectors {
 	}
 
 	/**
+	 * It computes the standard deviation of a vector given as an argument
+	 *
+	 * @param vector
+	 * @return standard deviation of the vector
+	 */
+	public static double getStandardDeviation(double[] vector) {
+		double standardDeviation = 0.0;
+		double average = getAverage(vector);
+		for (double element : vector) { // foreach syntax
+			standardDeviation += (element - average) * (element - average);
+		}
+		return Math.sqrt(standardDeviation / (vector.length - 1)); // Notice the -1 !
+	}
+
+	/**
 	 * it prints the entries of vector
 	 *
 	 * @param vector
@@ -141,5 +156,113 @@ public class UsefulMethodsMatricesVectors {
 			}
 		}
 		return bins;
+	}
+
+	/**
+	 * It returns a vector whose values are the absolute values of a vector given as
+	 * an argument
+	 * 
+	 * @param array, array of doubles
+	 * @return array of absolute value of the array
+	 */
+	public static double[] absVector(double[] vector) {
+		double[] absVector = new double[vector.length];
+		for (int i = 0; i < vector.length; i++) {
+			absVector[i] = Math.abs(vector[i]);
+		}
+		return absVector;
+	}
+
+	/**
+	 * it returns the sum of two vectors
+	 * 
+	 * @param firstArray
+	 * @param secondVector
+	 * @return sum of the vectors
+	 * @throws DifferentLengthException: if the vectors have not the same length
+	 */
+	public static double[] sumVectors(double[] firstVector, double[] secondVector) throws DifferentLengthException {
+		int firstLength = firstVector.length;
+		int secondLength = secondVector.length;
+
+		if (firstLength != secondLength) {
+			// we throw an exception if the two vectors have not the same length
+			throw new DifferentLengthException();
+		}
+		double[] sum = new double[firstLength];
+		for (int i = 0; i < firstLength; i++) {
+			sum[i] = firstVector[i] + secondVector[i];
+		}
+		return sum;
+	}
+
+	/**
+	 * it returns the difference of two vectors
+	 * 
+	 * @param firstVector
+	 * @param secondVector
+	 * @return difference of the vectors
+	 * @throws DifferentLengthException: if the vectors have not the same length
+	 */
+	public static double[] differenceVectors(double[] firstVector, double[] secondVector)
+			throws DifferentLengthException {
+		int firstLength = firstVector.length;
+		int secondLength = secondVector.length;
+
+		if (firstLength != secondLength) {
+			// we throw an exception if the two vectors have not the same length
+			throw new DifferentLengthException();
+		}
+		double[] difference = new double[firstLength];
+		for (int i = 0; i < firstLength; i++) {
+			difference[i] = firstVector[i] - secondVector[i];
+		}
+		return difference;
+	}
+
+	/**
+	 * It returns a vector whose elements are the product of the elements of two
+	 * vectors
+	 * 
+	 * @param firstVector
+	 * @param secondVector
+	 * @return vector whose elements are the product of the elements of two vectors
+	 * @throws DifferentLengthException: if the vectors have not the same length
+	 */
+	public static double[] productVectors(double[] firstVector, double[] secondVector) throws DifferentLengthException {
+		int firstLength = firstVector.length;
+		int secondLength = secondVector.length;
+		if (firstLength != secondLength) {
+			// we throw an exception if the two vectors have not the same length
+			throw new DifferentLengthException();
+		}
+		double[] product = new double[firstLength];
+		for (int i = 0; i < firstLength; i++) {
+			product[i] = firstVector[i] * secondVector[i];
+		}
+		return product;
+	}
+
+	/**
+	 * It returns a vector whose elements are the ratio of the elements of two
+	 * vectors
+	 * 
+	 * @param firstVector
+	 * @param secondVector
+	 * @return vector whose elements are the ratio of the elements of two vectors
+	 * @throws DifferentLengthException: if the vectors have not the same length
+	 */
+	public static double[] ratioVectors(double[] firstVector, double[] secondVector) throws DifferentLengthException {
+		int firstLength = firstVector.length;
+		int secondLength = secondVector.length;
+		if (firstLength != secondLength) {
+			// we throw an exception if the two vectors have not the same length
+			throw new DifferentLengthException();
+		}
+		double[] ratio = new double[firstLength];
+		for (int i = 0; i < firstLength; i++) {
+			ratio[i] = firstVector[i] / secondVector[i];
+		}
+		return ratio;
 	}
 }
